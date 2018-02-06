@@ -3,8 +3,8 @@
   <title>PHP Test</title>
  </head>
  <body>
-<?php for ($x  =1; $x <= 50; $x++) {
-	echo $x . ' <iframe width="560" height="315" src="https://www.youtube.com/embed/GJDNkVDGM_s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>';
+<?php for ($x  =1; $x <= 5; $x++) {
+	echo $x . '<iframe width="640" height="385" src="https://www.youtube.com/embed/GJDNkVDGM_s?autoplay=1"> </iframe> ';
 } ?>
  </body>
 </html>
