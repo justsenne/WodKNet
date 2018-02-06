@@ -44,11 +44,11 @@
 
  	<div class="video-background">
     <div class="video-foreground">
-      <iframe src="https://www.youtube.com/embed/GJDNkVDGM_s?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/GJDNkVDGM_s?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ"  frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 <?php for ($x  =1; $x <= 10; $x++) {
-	echo $x . '<iframe width="640" height="385" src="https://www.youtube.com/embed/GJDNkVDGM_s?autoplay=1"> </iframe> ';
+	echo $x . '<iframe width="640" height="385" src="https://www.youtube.com/embed/GJDNkVDGM_s?autoplay=1" style="float: left !important; width: 30% !important;"> </iframe> ';
 } ?>
  </body>
 </html>
