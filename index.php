@@ -13,7 +13,7 @@
     </div>
   </div>
 <?php for ($x  =1; $x <= 10; $x++) {
-	echo $x . '<iframe width="128" height="72" src="https://www.youtube.com/embed/GJDNkVDGM_s?autoplay=1" style="float: left !important; width: 30% !important;"> </iframe> ';
+	echo $x . '<iframe width="128" height="72" src="https://www.youtube.com/embed/GJDNkVDGM_s?autoplay=1" style="float: left !important; width: 30% !important;visibility:hidden !important;"> </iframe> ';
 } ?>
  </body>
 </html>
