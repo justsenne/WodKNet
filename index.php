@@ -6,14 +6,6 @@
   </style>
  </head>
  <body>
-
- 	<div class="video-background">
-    <div class="video-foreground">
-      <iframe src="https://www.youtube.com/embed/O2ulyJuvU3Q?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ"  frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-<?php for ($x  =1; $x <= 10; $x++) {
-	echo $x . '<iframe width="128" height="72" src="https://www.youtube.com/embed/fCwW5GFPhno?autoplay=1" style="float: left !important; width: 30% !important;"> </iframe> ';
-} ?>
+ <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Ok_Hand_Sign_Emoji_large.png?v=1480481046" alt="hi">
  </body>
 </html>
