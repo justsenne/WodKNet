@@ -1,0 +1,52 @@
+{##
+ # Tax banner page template
+ #}
+
+<div class="admin-welcome taxjar-welcome root">
+  <div class="taxjar-logo" align="center">
+  {% if this.getModuleLink() %}
+    <a href="{{ this.getModuleLink() }}" target="_blank">
+  {% endif %}
+      <img src="{{ this.getLogoUrl() }}" alt="{{ t('taxjar') }}" class="logo" />
+  {% if this.getModuleLink() %}
+    </a>
+  {% endif %}
+  </div>
+  <div class="taxjar-additional-header">
+    <div class="taxjar-options-header">
+      <p>{{ t('Let TaxJar automate your sales tax calculations, reporting, and filings in minutes.') }}</p>
+
+      {% if this.isEnableCheckboxVisible() %}
+        {{ widget('\\XLite\\View\\Button\\SwitcherStandaloneAction',
+          label='TaxJar enabled',
+          target= 'tax_classes',
+          action= 'toggle_taxjar',
+          value= this.getTaxJarEnabledValue()) }}
+      {% endif %}
+
+      {% if this.isJoinButtonVisible() %}
+        {{ widget('\\XLite\\View\\Button\\SimpleLink',
+          label=t('Sign up for TaxJar'),
+          blank=true,
+          location=this.getJoinLink(),
+          style='btn regular-main-button') }}
+      {% endif %}
+
+      {% if this.isInstallButtonVisible() %}
+        {{ widget('\\XLite\\View\\Button\\SimpleLink',
+        label=t('Install TaxJar integration'),
+        blank=true,
+        location=this.getInstallLink(),
+        style='btn regular-button') }}
+      {% endif %}
+
+      {% if this.isDashboardButtonVisible() %}
+        {{ widget('\\XLite\\View\\Button\\SimpleLink',
+        label=t('TaxJar Dashboard'),
+        blank=true,
+        location=this.getDashboardLink(),
+        style='btn regular-button') }}
+      {% endif %}
+    </div>
+  </div>
+</div>

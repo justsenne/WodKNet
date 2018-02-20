@@ -1,0 +1,22 @@
+{##
+ # Cached JS part
+ #
+ # @ListChild (list="jscontainer.js", weight="300")
+ #}
+<script type="application/javascript">
+  (function () {
+    var resources = {{ this.getResourceRegistry()|raw }};
+
+    if (window.CoreAMD !== undefined) {
+      require('js/core', function (core) {
+        core.registerResources(resources);
+      });
+    } else {
+      document.addEventListener('amd-ready', function (event) {
+        require('js/core', function (core) {
+          core.registerResources(resources);
+        });
+      });
+    }
+  })();
+</script>
