@@ -1,7 +1,0 @@
-{##
- # GA Actions registration (Universal Analytics)
- #}
-
-{% for event in this.getActions() %}
-    <script data-ga-ec-action="{{ event|json_encode() }}"></script>
-{% endfor %}

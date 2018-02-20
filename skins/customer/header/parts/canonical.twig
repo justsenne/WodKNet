@@ -1,9 +1,0 @@
-{##
- # Canonical tag
- #
- # @ListChild (list="head", weight="2")
- #}
-
-{% if this.getCanonicalURL() %}
-  <link rel="canonical" href="{{ this.getCanonicalURL() }}" />
-{% endif %}

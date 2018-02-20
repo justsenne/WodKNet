@@ -1,6 +1,0 @@
-<?php
-namespace XLite\Controller\Customer;
-/**
- * Web-based payment method return
- */
-class PaymentReturn extends \XLite\Module\CDev\Paypal\Controller\Customer\PaymentReturn {}

@@ -1,7 +1,0 @@
-{##
- # Entity switcher
- #}
-
-{% if this.isAllowEntitySwitch(this.entity) %}
-  {{ widget(this.switcherField.class, idx=this.idx, entity=this.entity, column=this.column, itemsList=this.getSelf(), fieldName=this.switcherField.name, fieldParams=this.switcherField.params) }}
-{% endif %}

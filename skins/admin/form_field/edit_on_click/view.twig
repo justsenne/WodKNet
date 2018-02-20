@@ -1,8 +1,0 @@
-{##
- # EditOnCLick view
- #}
-{% if this.isEscapeValue() %}
-  {{ this.getViewValue() }}
-{% else %}
-  {{ this.getViewValue()|raw }}
-{% endif %}

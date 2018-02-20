@@ -1,9 +1,0 @@
-{##
- # Settings
- #}
-
-{% if this.paymentMethod.isConfigured() %}
-  {% include 'modules/XC/Stripe/pages/configured.twig' %}
-{% else %}
-  {% include 'modules/XC/Stripe/pages/non_configured.twig' %}
-{% endif %}
