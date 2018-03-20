@@ -24,7 +24,7 @@
 
         <div class="row">
             <div class="col-md-12 ml-auto mr-auto text-center">
-                <input type="submit" class="btn btn-primary btn-raised" value="Inloggen">
+                <input type="submit" class="btn btn-round btn-raised" value="Inloggen" style="margin-top: 15px;font-size: 1.2em; background: #0094FE;">
             </div>
         </div>
     </form>

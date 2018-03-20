@@ -20,7 +20,7 @@
                     article_number
                 </p>
             </div>
-            <button class="btn" style="font-size: 1.2em; background: #0094FE; width: 100%; position: relative; vertical-align: bottom">Voeg toe aan winkelmandje</button>
+            <input class="btn btn-round" value="voeg toe aan winkelmandje" style="font-size: 1.2em; background: #0094FE; width: 100%; position: relative; vertical-align: bottom">
         </div>
 
 
