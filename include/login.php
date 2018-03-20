@@ -1,33 +1,44 @@
-<div class="col-md-4"></div>
+<div class="container">
+    <div class="row">
+        <div id="logregform" class="col-md-4 ml-auto mr-auto">
+    <h2 class="text-center title">Inloggen</h2>
+    <form class="contact-form">
 
-<div class="col-md-4">
-    <div class="card card-login card-plain">
-        <form class="form" method="" action="">
-
-            <div class="content">
-                <div class="input-group form-group-no-border input-lg">
-                    <input type="text" class="form-control" placeholder="Email">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group bmd-form-group">
+                    <label class="bmd-label-floating">E-mail</label>
+                    <textarea type="text" placeholder="Vul hier uw e-mail in." class="form-control" rows="1" id="exampleMessage"></textarea>
                 </div>
-                <div class="input-group form-group-no-border input-lg">
-                    <input type="text" placeholder="Wachtwoord" class="form-control">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group bmd-form-group">
+                    <label class="bmd-label-floating">Wachtwoord</label>
+                    <textarea type="password" placeholder="Vul hier uw wachtwoord in." class="form-control" rows="1" id="exampleMessage"></textarea>
                 </div>
             </div>
+        </div>
 
-            <div class="footer text-center">
-                <a href="#pablo" class="btn btn-primary btn-round btn-lg btn-block">Login</a>
-            </div>
-            <div class="pull-left">
-                <h6>
-                    <a href="#pablo" class="link">Nog geen account? klik hier.</a>
-                </h6>
-            </div>
-            <div class="pull-right">
-                <h6>
-                    <a href="#pablo" class="link">Wachtwoord vergeten?</a>
-                </h6>
-            </div>
-        </form>
-    </div>
-</div>
 
-<div class="col-md-4"></div>
+
+        <div class="form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="" checked="">
+
+                <span class="form-check-sign">
+                    <span class="check"></span>
+                                                </span>
+                Ik meld mij aan voor de nieuwsbrief.
+            </label>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 ml-auto mr-auto text-center">
+                <button class="btn btn-primary btn-raised">Account aanmaken</button>
+            </div>
+        </div>
+    </form>
+        </div></div></div>

@@ -23,20 +23,18 @@
     include 'include/nav.php';
 ?>
 
-<div class="container">
-    <div class="row">
-        <?php
-        include 'include/register.php';
-        ?>
-    </div>
-</div>
+<?php
+include 'product_template.php';
+?>
 </body>
 </html>
 
 
 <style>
     body{
-        background-color:#e5e5e5;
+        background-color:#0094FE;
+        background-image: url(background.png);
+        background-position: 50% 0;
     }
     #logregform{
         background: white;
@@ -46,11 +44,23 @@
         border-radius: 8px;
         box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
     }
-    danger{
+    redtxt{
          color: red;
     }
 
     .buttonblauw{
         color: red;
+    }
+
+    strong{
+        color: #0094FE;
+    }
+    p{
+        font-size: 1.2em;
+    }
+    h3{
+        font-size: 2em;
+        margin-bottom: 15px;
+        line-height: 1.4em;
     }
 </style>
