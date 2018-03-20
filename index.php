@@ -24,7 +24,7 @@
 ?>
 
 <?php
-include 'product_template.php';
+include 'register.php';
 ?>
 </body>
 </html>
