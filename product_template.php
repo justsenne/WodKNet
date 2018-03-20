@@ -11,13 +11,13 @@
             <div>
                 <p>
                     <strong>Product beschrijving:</strong><br />
-                    Een krachtige pc met zowel een goede processor als een goede videokaart.
+                    article_description
                 </p>
             </div>
             <div>
                 <p>
                     <strong>Artikelnummer:</strong>
-                    1803PC4.
+                    article_number
                 </p>
             </div>
             <button class="btn" style="font-size: 1.2em; background: #0094FE; width: 100%; position: relative; vertical-align: bottom">Voeg toe aan winkelmandje</button>

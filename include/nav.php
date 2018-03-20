@@ -12,12 +12,15 @@
             <div class="collapse navbar-collapse justify-content-end" id="navigation">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#pablo">
-                            Home
+                        <a class="nav-link" href="http://localhost/WodKNet/">
+                            login
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pablo">Link</a>
+                        <a class="nav-link" href="http://localhost/WodKNet/registreer.php">registreer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://localhost/WodKNet/productpage.php">producttemplate</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#pablo">Disabled</a>
