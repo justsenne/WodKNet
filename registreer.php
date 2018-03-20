@@ -11,7 +11,7 @@
     <title>PC4U - dé online computer en elektronica specialist!</title>
 
     <!-- Bootstrap core CSS -->
-<?php include 'include/bootstrap/css.php'; ?>
+    <?php include 'include/bootstrap/css.php'; ?>
     <?php include 'include/bootstrap/js.php'; ?>
     <!-- Custom styles for this template -->
     <link href="signin.css" rel="stylesheet">
@@ -20,11 +20,11 @@
 <body>
 
 <?php
-    include 'include/nav.php';
+include 'include/nav.php';
 ?>
 
 <?php
-include 'include/login.php';
+include 'include/register.php';
 ?>
 </body>
 </html>
@@ -45,7 +45,7 @@ include 'include/login.php';
         box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
     }
     redtxt{
-         color: red;
+        color: red;
     }
 
     .buttonblauw{
