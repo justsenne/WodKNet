@@ -17,7 +17,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://localhost/WodKNet/registreer.php">registreer</a>
+                        <a class="nav-link" href="http://localhost/WodKNet/register.php">registreer</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost/WodKNet/productpage.php">producttemplate</a>
