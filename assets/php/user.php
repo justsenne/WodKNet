@@ -21,7 +21,7 @@ Class User{
             $st->execute();
 
             if($st->rowCount() == 1) {
-                header("Location: ../index.php");
+                header("Location: ../loginpage.php");
                 exit;
             }
             else{
