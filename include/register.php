@@ -1,6 +1,6 @@
 <div id="logregform" class="col-md-8 ml-auto mr-auto">
     <h2 class="text-center title">Nieuw account aanmaken</h2>
-    <form class="contact-form" action="assets/php/register.php" method="post">
+    <form class="contact-form" action="register.php" method="post">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group bmd-form-group">
