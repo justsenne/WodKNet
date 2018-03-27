@@ -25,7 +25,7 @@ include 'include/nav.php';
 
 <div id="logregform" class="col-md-8 ml-auto mr-auto">
     <h2 class="text-center title">Nieuw account aanmaken</h2>
-    <form class="contact-form" action="register.php" method="post">
+    <form class="contact-form" action="assets/php/register.php" method="post">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group bmd-form-group">
@@ -107,7 +107,7 @@ include 'include/nav.php';
 
         <div class="row">
             <div class="col-md-4 ml-auto mr-auto text-center">
-                <input type="submit" class="btn btn-round btn-raised" value="Account aanmaken" style="margin-top: 15px;font-size: 1.2em; background: #0094FE;">
+                <input type="submit" name="submit" class="btn btn-round btn-raised" value="Account aanmaken" style="margin-top: 15px;font-size: 1.2em; background: #0094FE;">
             </div>
         </div>
     </form>

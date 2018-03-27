@@ -44,4 +44,6 @@ if(isset($_POST['newsletter']) && $_POST['newsletter'] == 'Yes') {
 }
 
 $stmt->execute();
+header("Location: ../../loginpage.php");
+exit;
 ?>
