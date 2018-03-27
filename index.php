@@ -1,7 +1,7 @@
 <?php
 
 if (!$_SESSION["logged"] == true) {
-    header("Location: ../index.php");
+    header("Location: loginpage.php");
     exit;
 }
 
