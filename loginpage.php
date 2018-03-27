@@ -48,7 +48,7 @@ if(isset($_POST['submit'])) {
     Password: <input type="password" name="pass"/>
     <input type="submit" name="submit" value="Login">
 
-    <a href="register.php">Nog geen account?</a>
+    <a href="include/register.php">Nog geen account?</a>
 
 </form>
 </body>
