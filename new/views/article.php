@@ -1,4 +1,4 @@
-<form id="form" action="productphp.php" method="POST" enctype="multipart/form-data">
+<form id="form" action="articlephp.php" method="POST" enctype="multipart/form-data">
     Article name: <input type="text" maxlength="15" name="articlename"><br>
     Article description (staat etc): <input type="text" maxlength="300" name="articledesc" required><br>
     Price: <input type="number" maxlength="6" name="articleprice" required><br>
