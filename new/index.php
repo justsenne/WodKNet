@@ -28,7 +28,7 @@
     } else {
         echo "welkom " . $_SESSION["user"] . "!";
             if ($_SESSION["rank"] == 1) {
-               echo "<a href='views/product.php'>Product toevoegen</a>";
+               echo "<a href='views/article.php'>article toevoegen</a>";
                 }
             echo "<a href='views/vernietig.php?vernietig'> Logout </a>";
     }
@@ -47,7 +47,7 @@ $sql->execute();
 $result = $sql->fetchAll();
 
 foreach ($result as $row) {
-    echo "<a href='views/productpage.php?product=" . $row['article_id'] . "'><div class='game-item'><h1>"
+    echo "<a href='views/articlepage.php?article=" . $row['article_id'] . "'><div class='game-item'><h1>"
         . strip_tags($row['article_name'], '')
         . " - $"
         . strip_tags($row["article_price"], '')
