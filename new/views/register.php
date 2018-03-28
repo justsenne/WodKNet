@@ -9,12 +9,12 @@
     house number: <input type="number" maxlength="5" name="housenumber" required><br>
     zip code: <input type="text" maxlength="7" name="zipcode" required><br>
 
-    <div class="g-recaptcha" data-sitekey="6Lcv7E4UAAAAAL4m-ta_YnoA33w5X1zzQXjV_HIy"></div>
+    newspaper: <input name="newsletter" type="checkbox"><br>
+
 
     <input type="submit" name="submit">
 
     <a href="../index.php"> index </a>
-    <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="js\jquery.js"></script>
     <script src="js\jquery.validate.js"></script>
     <script>

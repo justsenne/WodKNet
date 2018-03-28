@@ -23,11 +23,14 @@
     <?php
     session_start();
     if (!isset($_SESSION["logged"])) {
-        echo "<a href='views/login.php'>login</a>";
+        header("Location: views/login.php");
+        exit;
     } else {
-        echo "welkom " . $_SESSION["user"] . "!"
-            ."<a href='views/product.php'>Product toevoegen</a>"
-            . "<a href='views/vernietig.php?vernietig'> Logout </a>";
+        echo "welkom " . $_SESSION["user"] . "!";
+            if ($_SESSION["rank"] == 1) {
+               echo "<a href='views/product.php'>Product toevoegen</a>";
+                }
+            echo "<a href='views/vernietig.php?vernietig'> Logout </a>";
     }
     ?>
 </header>
@@ -39,15 +42,15 @@
 <?php
 include_once("views/connection.php");
 
-$sql = $conn->prepare("SELECT * FROM game_desc");
+$sql = $conn->prepare("SELECT * FROM articles");
 $sql->execute();
 $result = $sql->fetchAll();
 
 foreach ($result as $row) {
-    echo "<a href='views/productpage.php?product=" . $row['game_id'] . "'><div class='game-item'><h1>"
-        . strip_tags($row['game_name'], '')
+    echo "<a href='views/productpage.php?product=" . $row['article_id'] . "'><div class='game-item'><h1>"
+        . strip_tags($row['article_name'], '')
         . " - $"
-        . strip_tags($row["game_price"], '')
+        . strip_tags($row["article_price"], '')
         . "</h1><img style='width: 100%; height: 100%;' src='data/img/"
         . $row['game_image']
         . "'> </div> </a>";

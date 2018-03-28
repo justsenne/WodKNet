@@ -10,7 +10,7 @@
 
 /* line 15, ../sass/screen.scss */
 .header {
-  background-color: #d8c5c5;
+  background-color: black;
 }
 @media screen and (max-width: 1200px) {
   /* line 15, ../sass/screen.scss */
@@ -20,14 +20,14 @@
   }
   /* line 20, ../sass/screen.scss */
   .header .burger {
-    color: #f9f2f2;
+    color: white;
     font-size: 4em;
     float: right;
     padding: 1em;
   }
   /* line 25, ../sass/screen.scss */
   .header .burger :hover {
-    color: #ecdfdf;
+    color: grey;
   }
 }
 @media screen and (min-width: 1201px) {
@@ -45,7 +45,7 @@
 /* line 40, ../sass/screen.scss */
 .game-item {
   float: left;
-  background-color: #ecdfdf;
+  background-color: grey;
 }
 @media screen and (max-width: 700px) {
   /* line 40, ../sass/screen.scss */
@@ -90,7 +90,7 @@
 
 /* line 73, ../sass/screen.scss */
 body {
-  background-color: #f9f2f2;
+  background-color: white;
   cursor: url("../../data/cursos.png"), pointer !important;
 }
 

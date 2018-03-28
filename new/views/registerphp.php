@@ -1,15 +1,19 @@
 <?php
 include_once('connection.php');
 if (isset($_POST['submit'])) {
-    $sql = "INSERT INTO account_info(email,
+    $yes = 1;
+    $no = 0;
+
+    $sql = "INSERT INTO users(email,
                           password,
                           first_name,
-                          last_name,
+                          surname,
                           phone,
                           place,
                           adress,
                           house_number,
-                          zip_code) VALUES (
+                          zip_code,
+                          newsletter) VALUES (
                           :email,
                           :password,
                           :firstname,
@@ -18,7 +22,8 @@ if (isset($_POST['submit'])) {
                           :place,
                           :adress,
                           :housenumber,
-                          :zipcode)";
+                          :zipcode,
+                          :newsletter)";
 
     $stmt = $conn->prepare($sql);
 
@@ -31,6 +36,11 @@ if (isset($_POST['submit'])) {
     $stmt->bindParam(':adress', $_POST['adress'], PDO::PARAM_STR);
     $stmt->bindParam(':housenumber', $_POST['housenumber'], PDO::PARAM_STR);
     $stmt->bindParam(':zipcode', $_POST['zipcode'], PDO::PARAM_STR);
+    if(isset($_POST['newsletter']) && $_POST['newsletter'] == 'Yes') {
+        $stmt->bindParam(':newsletter', $yes, PDO::PARAM_STR);
+    } else {
+        $stmt->bindParam(':newsletter', $no, PDO::PARAM_STR);
+    }
 
     try {
         $stmt->execute();

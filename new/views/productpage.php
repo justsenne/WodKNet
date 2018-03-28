@@ -1,12 +1,12 @@
 <?php
-if (isset($_GET['product'])){
+if (isset($_GET['article'])){
 include_once("connection.php");
 include_once("include.php");
 include_once("header.php");
 
 $useredit = "neen";
 
-$sql = $conn->prepare("SELECT * FROM game_desc WHERE game_id=?");
+$sql = $conn->prepare("SELECT * FROM articles WHERE article_id=?");
 $sql->BindParam(1, $_GET['product']);
 $sql->execute();
 $result = $sql->fetchAll();

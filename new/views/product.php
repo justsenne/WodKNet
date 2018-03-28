@@ -1,8 +1,8 @@
 <form id="form" action="productphp.php" method="POST" enctype="multipart/form-data">
-    Game name: <input type="text" maxlength="15" name="gamename"><br>
-    Game description (staat etc): <input type="text" maxlength="300" name="gamedesc" required><br>
-    Price: <input type="number" maxlength="6" name="gameprice" required><br>
-    Game Image: <input type="file" name="gameimage"><br>
+    Article name: <input type="text" maxlength="15" name="articlename"><br>
+    Article description (staat etc): <input type="text" maxlength="300" name="articledesc" required><br>
+    Price: <input type="number" maxlength="6" name="articleprice" required><br>
+    Article Image: <input type="file" name="articleimage"><br>
 
 
     <input type="submit" name="submit">
