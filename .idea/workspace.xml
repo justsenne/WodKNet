@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20112b61-6150-4950-8cac-b8a2b6dd5417" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/views/articlepage.php" />
-      <change beforePath="$PROJECT_DIR$/new/index.php" afterPath="$PROJECT_DIR$/new/index.php" />
-      <change beforePath="$PROJECT_DIR$/new/views/productpage.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/new/views/product.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/new/views/productdelete.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/new/views/productphp.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/new/views/productupdate.php" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,27 +28,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articlepage.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="articlepage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/views/articlepage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+            <state relative-caret-position="504">
+              <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
               <folding>
                 <marker date="1522219235142" expanded="true" signature="149:190" ph="SELECT * FRO... articles" />
                 <marker date="1522219235142" expanded="true" signature="488:514" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="productdelete.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new/views/productdelete.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-              <folding>
-                <marker date="1522148622433" expanded="true" signature="83:124" ph="SELECT * FRO... articles" />
-                <marker date="1522148622433" expanded="true" signature="401:439" ph="DELETE FROM game_desc... " />
               </folding>
             </state>
           </provider>
@@ -61,6 +49,32 @@
               <folding>
                 <marker date="1522157069113" expanded="true" signature="545:585" ph="select * fro... users" />
                 <marker date="1522157069113" expanded="true" signature="1190:1238" ph="select * fro... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="articledelete.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new/views/articledelete.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1522148622433" expanded="true" signature="83:124" ph="SELECT * FRO... articles" />
+                <marker date="1522148622433" expanded="true" signature="401:439" ph="DELETE FROM articles... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="articleupdate.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/new/views/articleupdate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding>
+                <marker date="1522219701057" expanded="true" signature="139:231" ph="UPDATE game_desc... " />
+                <marker date="1522219701057" expanded="true" signature="723:762" ph="SELECT * FRO... game_desc" />
               </folding>
             </state>
           </provider>
@@ -100,28 +114,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="product.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new/views/product.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="62" lean-forward="true" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="productphp.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new/views/productphp.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-              <folding>
-                <marker date="1522217896468" expanded="true" signature="826:1085" ph="INSERT INTO game_desc... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="connection.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/views/connection.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -156,6 +148,7 @@
         <option value="$PROJECT_DIR$/new/views/productphp.php" />
         <option value="$PROJECT_DIR$/new/views/productpage.php" />
         <option value="$PROJECT_DIR$/new/index.php" />
+        <option value="$PROJECT_DIR$/new/views/articleupdate.php" />
       </list>
     </option>
   </component>
@@ -285,12 +278,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522148109376</updated>
-      <workItem from="1522148110792" duration="8080000" />
+      <workItem from="1522148110792" duration="8545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8080000" />
+    <option name="totallyTimeSpent" value="8545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -355,11 +348,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1522098990608" expanded="true" signature="114:153" ph="SELECT * FRO... game_desc" />
-            <marker date="1522098990608" expanded="true" signature="384:476" ph="UPDATE game_desc... " />
-            <marker date="1522098990608" expanded="true" signature="968:1007" ph="SELECT * FRO... game_desc" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -411,25 +400,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new/views/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="37" />
-          <folding>
-            <marker date="1522157069113" expanded="true" signature="545:585" ph="select * fro... users" />
-            <marker date="1522157069113" expanded="true" signature="1190:1238" ph="select * fro... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/new/views/productdelete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <marker date="1522148622433" expanded="true" signature="83:124" ph="SELECT * FRO... articles" />
-            <marker date="1522148622433" expanded="true" signature="401:439" ph="DELETE FROM game_desc... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -486,9 +461,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="11" column="39" lean-forward="true" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <marker date="1522217896468" expanded="true" signature="826:1085" ph="INSERT INTO game_desc... " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -512,11 +485,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new/views/articlepage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="15" lean-forward="true" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        <state relative-caret-position="504">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding>
             <marker date="1522219235142" expanded="true" signature="149:190" ph="SELECT * FRO... articles" />
             <marker date="1522219235142" expanded="true" signature="488:514" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/views/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="32" column="37" lean-forward="false" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="37" />
+          <folding>
+            <marker date="1522157069113" expanded="true" signature="545:585" ph="select * fro... users" />
+            <marker date="1522157069113" expanded="true" signature="1190:1238" ph="select * fro... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/views/articledelete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1522148622433" expanded="true" signature="83:124" ph="SELECT * FRO... articles" />
+            <marker date="1522148622433" expanded="true" signature="401:439" ph="DELETE FROM articles... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/views/articleupdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="47" column="0" lean-forward="true" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <marker date="1522219701057" expanded="true" signature="139:231" ph="UPDATE game_desc... " />
+            <marker date="1522219701057" expanded="true" signature="723:762" ph="SELECT * FRO... game_desc" />
           </folding>
         </state>
       </provider>

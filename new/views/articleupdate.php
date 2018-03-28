@@ -3,15 +3,8 @@ include_once('connection.php');
 session_start();
 
 if (isset($_POST['submit'])) {
-    $sql = $conn->prepare("SELECT * FROM game_desc WHERE game_id=?");
-    $sql->BindParam(1, $_GET['product']);
-    $sql->execute();
-    $result = $sql->fetchAll();
 
-    foreach ($result as $row) {
-        $userid = $row['userid'];
-    }
-    if ($userid == $_SESSION['userid']) {
+    if ($_SESSION['rank'] == 1) {
 
         $sql = "UPDATE game_desc WHERE game_id=?, userid=? SET game_name=?, game_description=?, game_price=?";
 
