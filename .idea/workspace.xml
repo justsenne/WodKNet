@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20112b61-6150-4950-8cac-b8a2b6dd5417" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/new/views/article.php" afterPath="$PROJECT_DIR$/new/views/article.php" />
-      <change beforePath="$PROJECT_DIR$/new/views/articledelete.php" afterPath="$PROJECT_DIR$/new/views/articledelete.php" />
       <change beforePath="$PROJECT_DIR$/new/views/articleupdate.php" afterPath="$PROJECT_DIR$/new/views/articleupdate.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,11 +78,13 @@
       <file leaf-file-name="articleupdate.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new/views/articleupdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="15" selection-end-column="68" />
+            <state relative-caret-position="312">
+              <caret line="16" column="126" lean-forward="false" selection-start-line="16" selection-start-column="126" selection-end-line="16" selection-end-column="126" />
               <folding>
-                <marker date="1522220513857" expanded="true" signature="139:232" ph="UPDATE articles... " />
-                <marker date="1522220513857" expanded="true" signature="667:708" ph="SELECT * FRO... articles" />
+                <marker date="1522221888858" expanded="true" signature="154:195" ph="SELECT * FRO... articles" />
+                <marker date="1522221888858" expanded="true" signature="411:504" ph="UPDATE articles... " />
+                <marker date="1522221888858" expanded="true" signature="411:521" ph="UPDATE articles... " />
+                <marker date="1522221888858" expanded="true" signature="991:1032" ph="SELECT * FRO... articles" />
               </folding>
             </state>
           </provider>
@@ -288,12 +288,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1522148109376</updated>
-      <workItem from="1522148110792" duration="9588000" />
+      <workItem from="1522148110792" duration="10728000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9588000" />
+    <option name="totallyTimeSpent" value="10728000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -545,11 +545,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new/views/articleupdate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="15" selection-end-column="68" />
+        <state relative-caret-position="312">
+          <caret line="16" column="126" lean-forward="false" selection-start-line="16" selection-start-column="126" selection-end-line="16" selection-end-column="126" />
           <folding>
-            <marker date="1522220513857" expanded="true" signature="139:232" ph="UPDATE articles... " />
-            <marker date="1522220513857" expanded="true" signature="667:708" ph="SELECT * FRO... articles" />
+            <marker date="1522221888858" expanded="true" signature="154:195" ph="SELECT * FRO... articles" />
+            <marker date="1522221888858" expanded="true" signature="411:504" ph="UPDATE articles... " />
+            <marker date="1522221888858" expanded="true" signature="411:521" ph="UPDATE articles... " />
+            <marker date="1522221888858" expanded="true" signature="991:1032" ph="SELECT * FRO... articles" />
           </folding>
         </state>
       </provider>
