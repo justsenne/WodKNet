@@ -52,7 +52,7 @@ foreach ($result as $row) {
         . " - $"
         . strip_tags($row["article_price"], '')
         . "</h1><img style='width: 100%; height: 100%;' src='data/img/"
-        . $row['game_image']
+        . $row['article_image']
         . "'> </div> </a>";
 }
 ?>

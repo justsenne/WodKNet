@@ -24,9 +24,8 @@ if (isset($_POST['submit'])) {
                 $fileDestination = '../data/img/' . $fileHash;
                 move_uploaded_file($fileTMPname, $fileDestination);
 
-                $sql = "INSERT INTO articles(article_name , article_description, article_price, article_image) 
-                            VALUES (
-                          :articlename,
+                $sql = "INSERT INTO articles(article_name, article_description, article_price, article_image) 
+                            VALUES ( :articlename,
                           :articledesc,
                           :articleprice,
                           :articleimage)";
@@ -39,7 +38,7 @@ if (isset($_POST['submit'])) {
                 $stmt->bindParam(':articleimage', $fileHash, PDO::PARAM_STR);
                     $stmt->execute();
                 } else {
-                    header("Location: ../index.php");
+                    header("Location: ../../index.php");
                 }
 
                 header("Location: ../index.php");
