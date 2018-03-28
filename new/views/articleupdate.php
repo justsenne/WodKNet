@@ -4,10 +4,10 @@ session_start();
 
 if (isset($_POST['submit'])) {
 
-    if ($_SESSION['rank'] == 1) {
+    if ($_SESSION['rank'] == 1 || !isset($_SESSION["logged"])) {
 
         $sql = $conn->prepare("SELECT * FROM articles WHERE article_id=?");
-        $sql->BindParam(1, $_GET['article']);
+        $sql->BindParam(1, $_POST['article']);
         $sql->execute();
         $result = $sql->fetchAll();
 
@@ -18,7 +18,7 @@ if (isset($_POST['submit'])) {
 
 
         $stmt = $conn->prepare($sql);
-        $stmt->bindParam(1, $_GET['article']);
+        $stmt->bindParam(1, $_POST['article'], PDO::PARAM_STR);
         $stmt->bindParam(2, $_POST['articlename'], PDO::PARAM_STR);
         $stmt->bindParam(3, $_POST['articledesc'], PDO::PARAM_STR);
         $stmt->bindParam(4, $_POST['articleprice'], PDO::PARAM_STR);
@@ -33,7 +33,7 @@ if (isset($_POST['submit'])) {
 
 <?php
 $sql = $conn->prepare("SELECT * FROM articles WHERE article_id=?");
-$sql->BindParam(1, $_GET['article']);
+$sql->BindParam(1, $_POST['article']);
 $sql->execute();
 $result = $sql->fetchAll();
 
@@ -43,14 +43,14 @@ foreach ($result as $row) {
     $price = $row['article_price'];
     $img = $row["article_image"];
 
-    echo "<form id='form' action='articleupdate.php?article=" . $_GET['article'] . "' method='POST' enctype='multipart/form-data'>
+    echo "<form id='form' action='articleupdate.php?article=" . $_POST['article'] . "' method='POST' enctype='multipart/form-data'>
            article name: <input type='text' maxlength='15' name='articlename' value='"
         . $name
         . "' required><br> article description (staat etc): <input type='text' maxlength='300' name='articledesc' value='"
            . $desc
            ."' required><br> Price: <input type='number' maxlength='6' name='articleprice' value='"
            . $price
-           ."' required><br> <input type='submit' name='submit'> </form>";
+           ."' required><br> <input type='submit' name='submit' value=". $_POST['article'] . "> </form>";
 } ?>
 <button onclick="goBack()">Go Back</button>
 
