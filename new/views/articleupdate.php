@@ -1,6 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <?php
+    include("include.php");
+    ?>
+</head>
+
+<body>
+
 <?php
+include("header.php");
+
 include_once('connection.php');
-session_start();
 
 if (isset($_POST['submit'])) {
 
@@ -32,6 +44,7 @@ if (isset($_POST['submit'])) {
 ?>
 
 <?php
+// in else
 $sql = $conn->prepare("SELECT * FROM articles WHERE article_id=?");
 $sql->BindParam(1, $_POST['article']);
 $sql->execute();
@@ -52,7 +65,8 @@ foreach ($result as $row) {
            . $price
            ."' required><br> <input type='submit' name='submit' value=". $_POST['article'] . "> </form>";
 } ?>
-<button onclick="goBack()">Go Back</button>
+
+<button onclick="goBack()">Go Black</button>
 
 
 
@@ -65,3 +79,5 @@ foreach ($result as $row) {
         window.history.back();
     }
 </script>
+</body>
+</html>
