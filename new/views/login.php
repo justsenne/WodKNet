@@ -14,6 +14,9 @@ if(isset($_POST['submit'])) {
 
 <html>
 <head>
+    <?php
+    include("include.php");
+    ?>
 </head>
 <body>
 
