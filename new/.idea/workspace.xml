@@ -11,21 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="connection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/connection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state relative-caret-position="192">
+              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -35,42 +25,52 @@
         <entry file="file://$PROJECT_DIR$/views/include.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/login.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+            <state relative-caret-position="660">
+              <caret line="101" column="27" lean-forward="false" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
               <folding>
-                <marker date="1522777393511" expanded="true" signature="1397:1452" ph="SELECT * FRO... articles" />
-                <marker date="1522777393511" expanded="true" signature="2549:2571" ph="SELECT * FRO... articles" />
+                <marker date="1522789589112" expanded="true" signature="1409:1464" ph="SELECT * FRO... articles" />
+                <marker date="1522789589112" expanded="true" signature="2314:2369" ph="SELECT * FRO... articles" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articledelete.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/articledelete.php">
+      <file leaf-file-name="comment.php.url" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Temp/comment.php.url">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vernietig.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/vernietig.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/article.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="32" />
               <folding>
-                <marker date="1522222366429" expanded="true" signature="166:204" ph="DELETE FROM articles... " />
+                <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,22 +79,45 @@
       <file leaf-file-name="articlepage.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/articlepage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="36">
+              <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding>
-                <marker date="1522752615441" expanded="true" signature="149:190" ph="SELECT * FRO... articles" />
-                <marker date="1522752615441" expanded="true" signature="488:500" ph="..." />
+                <marker date="1522790620072" expanded="true" signature="182:223" ph="SELECT * FRO... articles" />
+                <marker date="1522790620072" expanded="true" signature="1050:1054" ph="..." />
+                <marker date="1522790620072" expanded="true" signature="1065:1082" ph="..." />
+                <marker date="1522790620072" expanded="true" signature="1245:1263" ph="..." />
+                <marker date="1522790620072" expanded="true" signature="1351:1366" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="screen.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/marktplaats-compass/sass/screen.scss">
+      <file leaf-file-name="articlephp.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/articlephp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="77" column="13" lean-forward="true" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1522222366431" expanded="true" signature="826:1085" ph="INSERT INTO articles... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="articleupdate.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/articleupdate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="63" column="105" lean-forward="false" selection-start-line="63" selection-start-column="105" selection-end-line="63" selection-end-column="105" />
+              <folding>
+                <marker date="1522791177672" expanded="true" signature="284:325" ph="SELECT * FRO... articles" />
+                <marker date="1522791177672" expanded="true" signature="541:651" ph="UPDATE articles... " />
+                <marker date="1522791177672" expanded="true" signature="1221:1262" ph="SELECT * FRO... articles" />
+                <marker date="1522791177672" expanded="true" signature="1593:2395" ph="..." />
+                <marker date="1522791177672" expanded="true" signature="1618:1636" ph="..." />
+                <marker date="1522791177672" expanded="true" signature="1742:2370" ph="..." />
+                <marker date="1522791177672" expanded="true" signature="1742:2389" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,18 +125,8 @@
       <file leaf-file-name="style.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/marktplaats-compass/sass/style.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="83" column="6" lean-forward="false" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="var.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/marktplaats-compass/sass/var.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="410">
+              <caret line="116" column="11" lean-forward="false" selection-start-line="116" selection-start-column="11" selection-end-line="116" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -141,19 +154,21 @@
         <option value="$PROJECT_DIR$/views/connection.php" />
         <option value="$PROJECT_DIR$/views/product.php" />
         <option value="$PROJECT_DIR$/views/user.php" />
-        <option value="$PROJECT_DIR$/views/vernietig.php" />
         <option value="$PROJECT_DIR$/views/productdelete.php" />
         <option value="$PROJECT_DIR$/views/register.php" />
         <option value="$PROJECT_DIR$/views/productphp.php" />
         <option value="$PROJECT_DIR$/marktplaats-compass/sass/screen.scss" />
         <option value="$PROJECT_DIR$/views/productupdate.php" />
         <option value="$PROJECT_DIR$/views/productpage.php" />
-        <option value="$PROJECT_DIR$/views/article.php" />
-        <option value="$PROJECT_DIR$/views/articlepage.php" />
         <option value="$PROJECT_DIR$/views/include.php" />
         <option value="$PROJECT_DIR$/views/header.php" />
-        <option value="$PROJECT_DIR$/marktplaats-compass/sass/style.sass" />
+        <option value="$PROJECT_DIR$/views/vernietig.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$USER_HOME$/AppData/Local/Temp/comment.php.url" />
+        <option value="$PROJECT_DIR$/marktplaats-compass/sass/style.sass" />
+        <option value="$PROJECT_DIR$/views/article.php" />
+        <option value="$PROJECT_DIR$/views/articlepage.php" />
+        <option value="$PROJECT_DIR$/views/articleupdate.php" />
       </list>
     </option>
   </component>
@@ -170,7 +185,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="952" />
     <option name="width" value="976" />
-    <option name="height" value="1088" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -265,7 +280,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112676000" />
+    <option name="totallyTimeSpent" value="124659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -313,21 +328,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/layout/scripts/script.js" />
-    <entry file="file://$PROJECT_DIR$/marktplaats-compass/stylesheets/screen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marktplaats-compass/config.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/marktplaats-compass/sass/screen.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -341,8 +341,8 @@
         <state relative-caret-position="168">
           <caret line="7" column="75" lean-forward="false" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
           <folding>
-            <marker date="1522777393511" expanded="true" signature="1397:1452" ph="SELECT * FRO... articles" />
-            <marker date="1522777393511" expanded="true" signature="2549:2571" ph="SELECT * FRO... articles" />
+            <marker date="1522789589112" expanded="true" signature="1409:1464" ph="SELECT * FRO... articles" />
+            <marker date="1522789589112" expanded="true" signature="2314:2369" ph="SELECT * FRO... articles" />
           </folding>
         </state>
       </provider>
@@ -375,8 +375,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1522777393511" expanded="true" signature="1397:1452" ph="SELECT * FRO... articles" />
-            <marker date="1522777393511" expanded="true" signature="2549:2571" ph="SELECT * FRO... articles" />
+            <marker date="1522789589112" expanded="true" signature="1409:1464" ph="SELECT * FRO... articles" />
+            <marker date="1522789589112" expanded="true" signature="2314:2369" ph="SELECT * FRO... articles" />
           </folding>
         </state>
       </provider>
@@ -387,8 +387,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1522777393511" expanded="true" signature="1397:1452" ph="SELECT * FRO... articles" />
-            <marker date="1522777393511" expanded="true" signature="2549:2571" ph="SELECT * FRO... articles" />
+            <marker date="1522789589112" expanded="true" signature="1409:1464" ph="SELECT * FRO... articles" />
+            <marker date="1522789589112" expanded="true" signature="2314:2369" ph="SELECT * FRO... articles" />
           </folding>
         </state>
       </provider>
@@ -399,8 +399,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1522777393511" expanded="true" signature="1397:1452" ph="SELECT * FRO... articles" />
-            <marker date="1522777393511" expanded="true" signature="2549:2571" ph="SELECT * FRO... articles" />
+            <marker date="1522789589112" expanded="true" signature="1409:1464" ph="SELECT * FRO... articles" />
+            <marker date="1522789589112" expanded="true" signature="2314:2369" ph="SELECT * FRO... articles" />
           </folding>
         </state>
       </provider>
@@ -411,8 +411,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1522777393511" expanded="true" signature="1397:1452" ph="SELECT * FRO... articles" />
-            <marker date="1522777393511" expanded="true" signature="2549:2571" ph="SELECT * FRO... articles" />
+            <marker date="1522789589112" expanded="true" signature="1409:1464" ph="SELECT * FRO... articles" />
+            <marker date="1522789589112" expanded="true" signature="2314:2369" ph="SELECT * FRO... articles" />
           </folding>
         </state>
       </provider>
@@ -423,8 +423,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1522777393511" expanded="true" signature="1397:1452" ph="SELECT * FRO... articles" />
-            <marker date="1522777393511" expanded="true" signature="2549:2571" ph="SELECT * FRO... articles" />
+            <marker date="1522789589112" expanded="true" signature="1409:1464" ph="SELECT * FRO... articles" />
+            <marker date="1522789589112" expanded="true" signature="2314:2369" ph="SELECT * FRO... articles" />
           </folding>
         </state>
       </provider>
@@ -470,13 +470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/vernietig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/product.php" />
     <entry file="file://$PROJECT_DIR$/views/productphp.php" />
     <entry file="file://$PROJECT_DIR$/views/productdelete.php" />
@@ -507,14 +500,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/layout/scripts/script.js" />
-    <entry file="file://$PROJECT_DIR$/views/article.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/articledelete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -522,6 +507,97 @@
           <folding>
             <marker date="1522222366429" expanded="true" signature="166:204" ph="DELETE FROM articles... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marktplaats-compass/sass/screen.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="77" column="13" lean-forward="false" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marktplaats-compass/sass/var.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/_types.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="105" column="13" lean-forward="false" selection-start-line="105" selection-start-column="13" selection-end-line="105" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/vernietig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="7" lean-forward="false" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/include.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/comment.php.url">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="101" column="27" lean-forward="false" selection-start-line="101" selection-start-column="27" selection-end-line="101" selection-end-column="27" />
+          <folding>
+            <marker date="1522789589112" expanded="true" signature="1409:1464" ph="SELECT * FRO... articles" />
+            <marker date="1522789589112" expanded="true" signature="2314:2369" ph="SELECT * FRO... articles" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/marktplaats-compass/sass/style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="116" column="11" lean-forward="false" selection-start-line="116" selection-start-column="11" selection-end-line="116" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -537,78 +613,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/articlepage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="36">
+          <caret line="27" column="21" lean-forward="false" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding>
-            <marker date="1522752615441" expanded="true" signature="149:190" ph="SELECT * FRO... articles" />
-            <marker date="1522752615441" expanded="true" signature="488:500" ph="..." />
+            <marker date="1522790620072" expanded="true" signature="182:223" ph="SELECT * FRO... articles" />
+            <marker date="1522790620072" expanded="true" signature="1050:1054" ph="..." />
+            <marker date="1522790620072" expanded="true" signature="1065:1082" ph="..." />
+            <marker date="1522790620072" expanded="true" signature="1245:1263" ph="..." />
+            <marker date="1522790620072" expanded="true" signature="1351:1366" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/connection.php">
+    <entry file="file://$PROJECT_DIR$/views/article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marktplaats-compass/sass/var.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="34" lean-forward="false" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marktplaats-compass/sass/screen.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="77" column="13" lean-forward="true" selection-start-line="77" selection-start-column="13" selection-end-line="77" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/include.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/marktplaats-compass/sass/style.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="83" column="6" lean-forward="false" selection-start-line="83" selection-start-column="6" selection-end-line="83" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+        <state relative-caret-position="232">
+          <caret line="16" column="6" lean-forward="false" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="32" />
           <folding>
-            <marker date="1522777393511" expanded="true" signature="1397:1452" ph="SELECT * FRO... articles" />
-            <marker date="1522777393511" expanded="true" signature="2549:2571" ph="SELECT * FRO... articles" />
+            <element signature="n#style#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/articleupdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="63" column="105" lean-forward="false" selection-start-line="63" selection-start-column="105" selection-end-line="63" selection-end-column="105" />
+          <folding>
+            <marker date="1522791177672" expanded="true" signature="284:325" ph="SELECT * FRO... articles" />
+            <marker date="1522791177672" expanded="true" signature="541:651" ph="UPDATE articles... " />
+            <marker date="1522791177672" expanded="true" signature="1221:1262" ph="SELECT * FRO... articles" />
+            <marker date="1522791177672" expanded="true" signature="1593:2395" ph="..." />
+            <marker date="1522791177672" expanded="true" signature="1618:1636" ph="..." />
+            <marker date="1522791177672" expanded="true" signature="1742:2370" ph="..." />
+            <marker date="1522791177672" expanded="true" signature="1742:2389" ph="..." />
           </folding>
         </state>
       </provider>

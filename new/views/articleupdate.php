@@ -54,14 +54,14 @@ if (isset($_POST['submit'])) {
         $price = $row['article_price'];
         $img = $row["article_image"];
 
-        echo "<form id='form' action='articleupdate.php?article=" . $_GET['article'] . "' method='POST' enctype='multipart/form-data'>
-           article name: <input type='text' maxlength='15' name='articlename' value='"
+        echo "<div class=\"products\"><form id='form' style=\"text-align: center\" action='articleupdate.php?article=" . $_GET['article'] . "' method='POST' enctype='multipart/form-data'>
+           <label>Naam van het product</label><br /><input type='text' class=\"inputveld\"  maxlength='15' name='articlename' value='"
             . $name
-            . "' required><br> article description (staat etc): <input type='text' maxlength='300' name='articledesc' value='"
+            . "' required><br><br><label>Beschrijving van het product</label><br /><input type='text' class=\"inputveld\"  maxlength='300' name='articledesc' value='"
             . $desc
-            . "' required><br> Price: <input type='number' maxlength='6' name='articleprice' value='"
+            . "' required><br><br><label>Prijs van het product</label><br /><input type='text' maxlength='6' class=\"inputveld\"  name='articleprice' value='"
             . $price
-            . "' required><br> <input type='submit' name='submit' value='SUBMIT ARTICLE " . $_GET['article'] . "'> </form>";
+            . "' required><br><br> <input type='submit' class=\"inputknop\" name='submit' value='Product aanpassen'> </form></div>";
     }
 } else {
     header("Location: ../index.php");

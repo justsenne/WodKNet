@@ -72,7 +72,6 @@ h1 {
 /* line 62, ../sass/style.sass */
 .header {
   background: linear-gradient(to right, #00429D, #006BFF, #00429D);
-  border-bottom: 3px solid #00429D;
   color: #F6F6FF;
   width: 100%;
   padding: 0em;
@@ -81,13 +80,13 @@ h1 {
   top: 0px;
 }
 
-/* line 72, ../sass/style.sass */
+/* line 71, ../sass/style.sass */
 .title {
   text-align: center;
   padding: 1vh;
 }
 
-/* line 77, ../sass/style.sass */
+/* line 76, ../sass/style.sass */
 .phpheader {
   background: #006BFF;
   color: #F6F6FF;
@@ -96,28 +95,76 @@ h1 {
   word-wrap: break-word;
 }
 
-/* line 84, ../sass/style.sass */
+/* line 83, ../sass/style.sass */
 h2, h3 {
   margin: 0px;
   text-align: center;
 }
 
-/* line 88, ../sass/style.sass */
+/* line 87, ../sass/style.sass */
 .products {
   padding: 5vw;
   background-color: #F6F6FF;
   margin: 5vw;
 }
-/* line 92, ../sass/style.sass */
+/* line 88, ../sass/style.sass */
+.products a {
+  text-decoration: none;
+  color: #006BFF;
+}
+/* line 94, ../sass/style.sass */
 .products .nieuwgrid {
   margin-top: 5vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   grid-gap: 15px;
 }
-/* line 97, ../sass/style.sass */
+/* line 99, ../sass/style.sass */
 .products .productgrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   grid-gap: 15px;
+}
+
+/* line 104, ../sass/style.sass */
+.productitem {
+  box-shadow: 0px 0px 7px #a1a1b9;
+}
+@media (max-width: 720px) {
+  /* line 106, ../sass/style.sass */
+  .productitem .img {
+    height: 250px;
+  }
+}
+@media (min-width: 720px) {
+  /* line 106, ../sass/style.sass */
+  .productitem .img {
+    height: 350px;
+  }
+}
+
+/* line 112, ../sass/style.sass */
+.borderding {
+  border-top: #006BFF 1px solid;
+  margin-top: 2px;
+}
+
+/* line 116, ../sass/style.sass */
+.inputveld {
+  width: 75%;
+  border-bottom: 1px solid #a1a1b9 !important;
+  background-color: #F6F6FF;
+  color: #00429D;
+  border: 0px solid;
+  padding: 5px;
+}
+
+/* line 124, ../sass/style.sass */
+.inputknop {
+  width: 50%;
+  border: 1px solid #00429D;
+  background-color: #006BFF;
+  margin-top: 5px;
+  color: #F6F6FF;
+  padding: 5px;
 }

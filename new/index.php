@@ -25,8 +25,8 @@
         echo "<a href='login.php'>login</a>";
     } else {
         echo "welkom " . $_SESSION["user"] . "!"
-            ."<a href='article.php'>Product toevoegen</a>"
-            . "<a href='vernietig.php?vernietig'> Logout </a>";
+            ."<a href='views/article.php'>Product toevoegen</a>"
+            . "<a href='views/vernietig.php?vernietig'> Logout </a>";
     }
     ?>
 </div>
@@ -49,53 +49,63 @@
 
     foreach ($result as $row) {
         echo ""
+            . "<div class='productitem'>"
+
+
             . "<a href='views/articlepage.php?article=" . $row['article_id'] . "'> "
-            . "<img style='width: 100%;' src='data/img/"
+            . "<img class='img' style='width: 100%; object-fit: cover;' src='data/img/"
             . $row['article_image']
             . "'></a>"
+
 
             . "<a href='views/articlepage.php?article=" . $row['article_id'] . "'> "
             . "<h3>"
             . $row['article_name']
             . "<br /> €"
             . $row['article_price']
-            . "</h3></a>";
+            . "</h3></a>"
 
-
-
-//        echo "<a href='views/articlepage.php?article=" . $row['article_id'] . "'><div class='game-item'><h1>"
-//            . strip_tags($row['article_name'], '')
-//            . "<br /> €"
-//            . strip_tags($row["article_price"], '')
-//            . "</h1>"
-//            . "<img style='width: 100%;' src='data/img/"
-//            . $row['article_image']
-//            . "'> </div> </a>";
+            . "</div>";
     }
     ?>
         </div>
 </div>
 
 <div class="products">
-    <div class="productgrid"
-<?php
-include_once("views/connection.php");
+    <h2>Nieuw in de webshop:</h2>
+    <div class="nieuwgrid">
+        <?php
+        include_once("views/connection.php");
 
-$sql = $conn->prepare("SELECT * FROM articles");
-$sql->execute();
-$result = $sql->fetchAll();
+        $sql = $conn->prepare("SELECT * FROM articles ORDER BY created_at DESC LIMIT 4");
+        $sql->execute();
+        $result = $sql->fetchAll();
 
-foreach ($result as $row) {
-    echo "<a href='views/articlepage.php?article=" . $row['article_id'] . "'><div class='game-item'><h1>"
-        . strip_tags($row['article_name'], '')
-        . " - $"
-        . strip_tags($row["article_price"], '')
-        . "</h1><img style='width: 100%;' src='data/img/"
-        . $row['article_image']
-        . "'> </div> </a>";
-}
-?>
-</div></div>
+        foreach ($result as $row) {
+            echo ""
+                . "<div class='productitem'>"
+
+
+                . "<a href='views/articlepage.php?article=" . $row['article_id'] . "'> "
+                . "<img class='img' style='width: 100%; object-fit: cover;' src='data/img/"
+                . $row['article_image']
+                . "'></a>"
+
+
+                . "<a href='views/articlepage.php?article=" . $row['article_id'] . "'> "
+                . "<h3>"
+                . $row['article_name']
+                . "<br /> €"
+                . $row['article_price']
+                . "</h3></a>"
+
+                . "</div>";
+        }
+        ?>
+    </div>
+</div>
+
+
 
 
 <script type="text/javascript">

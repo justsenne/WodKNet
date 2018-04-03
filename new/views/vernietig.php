@@ -2,8 +2,8 @@
 session_start();
 if (isset($_GET['vernietig'])){
     session_destroy();
-    header("Location: ../index.php");
+    header("Location: login.php");
 } else{
-    header("Location: ../index.php");
+    header("Location: login.php");
 }
 ?>

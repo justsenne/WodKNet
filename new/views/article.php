@@ -13,16 +13,25 @@
 include("header.php");
 ?>
 
-<form id="form" action="articlephp.php" method="POST" enctype="multipart/form-data">
-    Article name: <input type="text" maxlength="15" name="articlename"><br>
-    Article description (staat etc): <input type="text" maxlength="300" name="articledesc" required><br>
-    Price: <input type="number" maxlength="6" name="articleprice" required><br>
-    Article Image: <input type="file" name="articleimage"><br>
+<div class="products">
+<form style="text-align: center" id="form" action="articlephp.php" method="POST" enctype="multipart/form-data">
+    <label>Naam van het product</label><br />
+    <input class="inputveld" type="text" maxlength="15" name="articlename"><br><br>
+
+    <label>Beschrijving van het product</label><br />
+    <input class="inputveld" type="text" maxlength="300" name="articledesc" required><br><br>
+
+    <label>Prijs van het product</label><br />
+    <input class="inputveld" type="text" maxlength="6" name="articleprice" required><br><br>
+
+    <label>Afbeelding van het product</label><br />
+    <input class="inputveld" type="file" name="articleimage"><br><br>
 
 
-    <input type="submit" name="submit">
+    <input class="inputknop" type="submit" value="Product toevoegen" name="submit">
 
 </form>
+</div>
 
 <a href="../index.php"> index </a>
 
