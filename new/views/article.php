@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <?php
+    include("include.php");
+    ?>
+</head>
+
+<body>
+
+<?php
+include("header.php");
+?>
+
 <form id="form" action="articlephp.php" method="POST" enctype="multipart/form-data">
     Article name: <input type="text" maxlength="15" name="articlename"><br>
     Article description (staat etc): <input type="text" maxlength="300" name="articledesc" required><br>
@@ -9,10 +24,13 @@
 
 </form>
 
-    <a href="../index.php"> index </a>
+<a href="../index.php"> index </a>
 
-    <script src="js\jquery.js"></script>
-    <script src="js\jquery.validate.js"></script>
-    <script>
-        $("#form").validate();
-    </script>
+<script src="js\jquery.js"></script>
+<script src="js\jquery.validate.js"></script>
+<script>
+    $("#form").validate();
+</script>
+</body>
+
+</html>
