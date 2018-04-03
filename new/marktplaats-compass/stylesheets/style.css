@@ -9,23 +9,15 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 10px;
+  grid-gap: 0px;
 }
 
-/* line 13, ../sass/style.sass */
-.item {
-  background-color: #F6F6FF;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 1em;
-}
-
-/* line 20, ../sass/style.sass */
+/* line 16, ../sass/style.sass */
 body {
   background-color: #a1a1b9;
 }
 
-/* line 23, ../sass/style.sass */
+/* line 19, ../sass/style.sass */
 .blok {
   background-color: #F6F6FF;
   padding-left: 1em;
@@ -38,7 +30,7 @@ body {
   border-radius: 0.5em;
 }
 
-/* line 35, ../sass/style.sass */
+/* line 31, ../sass/style.sass */
 .login .submit {
   width: 80%;
   margin-left: 10%;
@@ -48,11 +40,11 @@ body {
   padding: 1em;
   color: #F6F6FF;
 }
-/* line 43, ../sass/style.sass */
+/* line 39, ../sass/style.sass */
 .login .submit:hover {
   background-color: #00429D;
 }
-/* line 45, ../sass/style.sass */
+/* line 41, ../sass/style.sass */
 .login .veld {
   width: 80%;
   margin-left: 10%;
@@ -64,22 +56,43 @@ body {
   padding: 0.5em;
   color: #00429D;
 }
-/* line 55, ../sass/style.sass */
+/* line 51, ../sass/style.sass */
 .login .veld:focus {
   border-bottom: 1px solid #006BFF !important;
   border: 1px solid #F6F6FF;
   color: #006BFF;
 }
 
-/* line 60, ../sass/style.sass */
+/* line 56, ../sass/style.sass */
 h1 {
-  margin: 0em;
-  margin-bottom: 0.3em;
+  margin: 0vh;
+  font-size: 2em;
 }
 
-/* line 66, ../sass/style.sass */
+/* line 62, ../sass/style.sass */
 .header {
-  background-color: #006BFF;
+  background: linear-gradient(to right, #4E99FF, #006BFF, #00429D);
+  border-bottom: 2px solid #F6F6FF;
+  color: #F6F6FF;
   width: 100%;
-  padding: 1em;
+  padding: 0em;
+  word-wrap: break-word;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0 10px 6px -10px #00429D;
+}
+
+/* line 73, ../sass/style.sass */
+.title {
+  text-align: center;
+  padding: 1vh;
+}
+
+/* line 78, ../sass/style.sass */
+.phpheader {
+  background: #006BFF;
+  color: #F6F6FF;
+  width: 100%;
+  padding: 0em;
+  word-wrap: break-word;
 }
