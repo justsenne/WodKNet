@@ -1,8 +1,14 @@
 <html>
 <head>
-    <?php
-    include_once("views/include.php");
-    ?>
+    <script type="text/javascript" src="../layout/scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../layout/scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../layout/scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="../layout/scripts/ajax.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../layout/scripts/fontawesome-all.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../layout/css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="./marktplaats-compass/stylesheets/style.css">
 </head>
 <body>
 
@@ -41,7 +47,7 @@ foreach ($result as $row) {
         . strip_tags($row['article_name'], '')
         . " - $"
         . strip_tags($row["article_price"], '')
-        . "</h1><img style='width: 100%; height: 100%;' src='data/img/"
+        . "</h1><img style='width: 100%;' src='data/img/"
         . $row['article_image']
         . "'> </div> </a>";
 }
