@@ -1,0 +1,77 @@
+/* line 3, ../sass/style.sass */
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #a1a1b9;
+}
+
+/* line 7, ../sass/style.sass */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+}
+
+/* line 12, ../sass/style.sass */
+.item {
+  background-color: #F6F6FF;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+}
+
+/* line 19, ../sass/style.sass */
+body {
+  background-color: #a1a1b9;
+}
+
+/* line 22, ../sass/style.sass */
+.blok {
+  background-color: #F6F6FF;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+  border-radius: 0.5em;
+}
+
+/* line 34, ../sass/style.sass */
+.login .submit {
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 10em;
+  background-color: #006BFF;
+  border: 0px solid;
+  padding: 1em;
+  color: #F6F6FF;
+}
+/* line 42, ../sass/style.sass */
+.login .submit:hover {
+  background-color: #00429D;
+}
+/* line 44, ../sass/style.sass */
+.login .veld {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 1em;
+  border-radius: 0em;
+  background-color: #F6F6FF;
+  border-bottom: 1px solid #a1a1b9 !important;
+  border: 1px solid #F6F6FF;
+  padding: 0.5em;
+  color: #00429D;
+}
+/* line 54, ../sass/style.sass */
+.login .veld:focus {
+  border-bottom: 1px solid #006BFF !important;
+  border: 1px solid #F6F6FF;
+  color: #006BFF;
+}
+
+/* line 59, ../sass/style.sass */
+h1 {
+  margin: 0em;
+  margin-bottom: 0.3em;
+}

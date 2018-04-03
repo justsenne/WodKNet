@@ -7,4 +7,4 @@
 
     <link rel="stylesheet" type="text/css" href="../layout/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../layout/css/fontawesome-all.css">
-    <link rel="stylesheet" type="text/css" href="../marktplaats-compass/stylesheets/screen.css">
+    <link rel="stylesheet" type="text/css" href="../marktplaats-compass/stylesheets/style.css">
