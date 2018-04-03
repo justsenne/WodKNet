@@ -33,7 +33,6 @@ include("header.php");
 </form>
 </div>
 
-<a href="../index.php"> index </a>
 
 <script src="js\jquery.js"></script>
 <script src="js\jquery.validate.js"></script>

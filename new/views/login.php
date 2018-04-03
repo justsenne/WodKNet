@@ -1,5 +1,6 @@
 <?php
 
+
 include_once('user.php');
 
 if(isset($_POST['submit'])) {
@@ -19,15 +20,22 @@ if(isset($_POST['submit'])) {
     ?>
 </head>
 <body>
+<header class="header">
+    <h1 class="title">PC4U</h1>
+</header>
 
-<form method="post" action="login.php">
-    Email: <input type="text" name="email"/>
-    Password: <input type="password" name="pass"/>
-    <input type="submit" name="submit" value="Login">
+<div class="products">
+<form style="text-align: center" method="post" action="login.php">
+    <label>Email</label><br />
+    <input class="inputveld" type="text" name="email"/><br><br>
+    <label>Wachtwoord</label><br />
+    <input class="inputveld" type="password" name="pass"/><br><br>
+    <input type="submit" class="inputknop" name="submit" value="Login"><br><br>
 
     <a href="register.php">Nog geen account?</a>
 
 </form>
+</div>
 </body>
 
 </html>

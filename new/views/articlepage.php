@@ -23,7 +23,7 @@ $result = $sql->fetchAll();
             . $row['article_image']
             . "'></div>"
 
-            . "<h3>"
+            . "<h3 style='text-align: left'>"
             . $row['article_name']
             . "<br /> €"
             . $row['article_price']
