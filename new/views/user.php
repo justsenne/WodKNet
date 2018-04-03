@@ -31,9 +31,7 @@ Class User
                 $result = $statement->fetchAll();
                 foreach ($result as $var) {
                     $_SESSION["rank"] = $var["rank"];
-                    var_dump($_SESSION["rank"]);
                     $_SESSION["user"] = $var["first_name"];
-                    var_dump($_SESSION["user"]);
                 }
 
                 foreach ($result as $hash) {
@@ -46,7 +44,6 @@ Class User
                 }
                 if ($hashed == true) {
                     $_SESSION["logged"] = "true";
-                    var_dump($_SESSION["logged"]);
                     header("Location: ../index.php");
                     exit;
                 } else {
