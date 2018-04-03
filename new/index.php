@@ -25,7 +25,7 @@
         echo "<a href='login.php'>login</a>";
     } else {
         echo "welkom " . $_SESSION["user"] . "!"
-            ."<a href='product.php'>Product toevoegen</a>"
+            ."<a href='article.php'>Product toevoegen</a>"
             . "<a href='vernietig.php?vernietig'> Logout </a>";
     }
     ?>
@@ -37,6 +37,30 @@
 <title> HomePage - GamerTrade </title>
 
 <!-- Body -->
+<div class="products">
+    <h2>Nieuw in onze webshop:</h2>
+    <div class="nieuwgrid">
+    <?php
+    include_once("views/connection.php");
+
+    $sql = $conn->prepare("SELECT * FROM articles ORDER BY created_at DESC LIMIT 4");
+    $sql->execute();
+    $result = $sql->fetchAll();
+
+    foreach ($result as $row) {
+        echo "<a href='views/articlepage.php?article=" . $row['article_id'] . "'><div class='game-item'><h1>"
+            . strip_tags($row['article_name'], '')
+            . " - $"
+            . strip_tags($row["article_price"], '')
+            . "</h1><img style='width: 100%;' src='data/img/"
+            . $row['article_image']
+            . "'> </div> </a>";
+    }
+    ?>
+        </div>
+</div>
+
+<div class="products">
 <?php
 include_once("views/connection.php");
 
@@ -54,6 +78,8 @@ foreach ($result as $row) {
         . "'> </div> </a>";
 }
 ?>
+</div>
+
 
 <script type="text/javascript">
     $('#iconified').on('keyup', function () {
