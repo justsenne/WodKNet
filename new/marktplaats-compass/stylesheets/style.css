@@ -71,37 +71,23 @@ h1 {
 
 /* line 62, ../sass/style.sass */
 .header {
-  background: linear-gradient(to right, #4E99FF, #006BFF, #00429D);
-  border-bottom: 2px solid #F6F6FF;
+  background: linear-gradient(to right, #00429D, #006BFF, #00429D);
+  border-bottom: 3px solid #00429D;
   color: #F6F6FF;
   width: 100%;
   padding: 0em;
   word-wrap: break-word;
   position: sticky;
   top: 0px;
-  box-shadow: 0 10px 6px -10px #00429D;
 }
 
-/* line 73, ../sass/style.sass */
-.bottomnav {
-  background: linear-gradient(to right, #4E99FF, #006BFF, #00429D);
-  border-bottom: 2px solid #F6F6FF;
-  color: #F6F6FF;
-  width: 100%;
-  padding: 0em;
-  word-wrap: break-word;
-  position: absolute;
-  bottom: 0px;
-  box-shadow: 0 10px 6px -10px #00429D;
-}
-
-/* line 84, ../sass/style.sass */
+/* line 72, ../sass/style.sass */
 .title {
   text-align: center;
   padding: 1vh;
 }
 
-/* line 89, ../sass/style.sass */
+/* line 77, ../sass/style.sass */
 .phpheader {
   background: #006BFF;
   color: #F6F6FF;
@@ -110,14 +96,27 @@ h1 {
   word-wrap: break-word;
 }
 
-/* line 97, ../sass/style.sass */
-.products {
-  padding: 10px;
-  background-color: #F6F6FF;
-  margin: 10px;
+/* line 84, ../sass/style.sass */
+h2, h3 {
+  margin: 0px;
+  text-align: center;
 }
-/* line 101, ../sass/style.sass */
+
+/* line 88, ../sass/style.sass */
+.products {
+  padding: 5vw;
+  background-color: #F6F6FF;
+  margin: 5vw;
+}
+/* line 92, ../sass/style.sass */
 .products .nieuwgrid {
+  margin-top: 5vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  grid-gap: 15px;
+}
+/* line 97, ../sass/style.sass */
+.products .productgrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   grid-gap: 15px;
