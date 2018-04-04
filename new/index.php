@@ -29,11 +29,9 @@
     <div class="menuding" style="display: block; text-align: center">
         <?php
         echo ""
-            ."<a href='../index.php'>Voorpagina</a><br>"
-            ."<a href='../index.php'>Producten</a><br>"
-            ."<a href='../index.php'>Recenties</a><br>"
-            ."<a href='article.php'>Product toevoegen</a><br>"
-            ."<a href='vernietig.php?vernietig'> Logout </a><br>";
+            ."<a href='index.php'>Voorpagina</a><br>"
+            ."<a href='views/article.php'>Product toevoegen</a><br>"
+            ."<a href='views/vernietig.php?vernietig'> Logout </a><br>";
         session_start();
         ?>
     </div>
@@ -43,7 +41,7 @@
 
 
 
-<title> HomePage - GamerTrade </title>
+<title> HomePage - PC4U </title>
 
 <!-- Body -->
 <div class="products">
