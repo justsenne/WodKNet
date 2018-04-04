@@ -24,13 +24,6 @@ session_start();
 <header class="header">
     <h1 class="title">PC4U</h1>
 </header>
-<script>
-    $(document).ready(function(){
-        $(".phpheader").click(function(){
-            $(".menuding").slideToggle(250);
-        });
-    });
-</script>
 <div class="phpheader">
     <h2>menu</h2>
 
