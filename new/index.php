@@ -21,16 +21,12 @@
     <h1 class="title">PC4U</h1>
 </header>
 <script>
-    $(document).ready(function(){
-        $(".phpheader").click(function(){
-            $(".menuding").slideToggle(250);
-        });
-    });
+    
 </script>
 <div class="phpheader">
     <h2>menu</h2>
 
-    <div class="menuding" style="display: none; text-align: center">
+    <div class="menuding" style="display: block; text-align: center">
         <?php
         echo ""
             ."<a href='../index.php'>Voorpagina</a><br>"
