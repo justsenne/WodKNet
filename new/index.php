@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
 <html>
 <head>
     <script type="text/javascript" src="../layout/scripts/jquery-1.10.2.min.js"></script>
@@ -26,13 +30,12 @@
 <div class="phpheader">
     <h2>menu</h2>
 
-    <div class="menuding" style="display: block; text-align: center">
+    <div class="menuding" style="display: none; text-align: center">
         <?php
         echo ""
             ."<a href='index.php'>Voorpagina</a><br>"
             ."<a href='views/article.php'>Product toevoegen</a><br>"
             ."<a href='views/vernietig.php?vernietig'> Logout </a><br>";
-        session_start();
         ?>
     </div>
 
@@ -115,7 +118,7 @@
 
 
 
-<script type="text/javascript">
+<script>
     $('#iconified').on('keyup', function () {
         var input = $(this);
         if (input.val().length === 0) {
@@ -125,10 +128,11 @@
         }
     });
 
-    $(document).ready(
-        alert("Hello! I am an alert box!!");
-    )
-    ;
+    $(document).ready(function(){
+        $(".phpheader").click(function(){
+            $(".menuding").slideToggle(250);
+        });
+    });
 
 
 </script>
