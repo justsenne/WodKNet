@@ -85,12 +85,12 @@
 </div>
 
 <div class="products">
-    <h2>Nieuw in de webshop:</h2>
+    <h2>Onze producten:</h2>
     <div class="nieuwgrid">
         <?php
         include_once("views/connection.php");
 
-        $sql = $conn->prepare("SELECT * FROM articles ORDER BY created_at DESC LIMIT 4");
+        $sql = $conn->prepare("SELECT * FROM articles");
         $sql->execute();
         $result = $sql->fetchAll();
 
