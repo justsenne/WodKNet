@@ -1,32 +1,4 @@
-<header class="header">
-    <h1 class="title">PC4U</h1>
-</header>
-<script>
-    $(document).ready(function(){
-        $(".phpheader").click(function(){
-            $(".menuding").slideToggle(500);
-        });
-    });
-</script>
-<div class="phpheader">
-        <h1>menu</h1>
 
-        <div class="menuding"
-        <?php
-            echo ""
-                ."<a href='../index.php'>homepage</a>";
-        session_start();
-        if (!isset($_SESSION["logged"])) {
-            echo "<a href='login.php'>login</a>";
-        } else {
-            echo "welkom " . $_SESSION["user"] . "!"
-                ."<a href='article.php'>Product toevoegen</a>"
-                . "<a href='vernietig.php?vernietig'> Logout </a>";
-        }
-        ?>
-</div>
-
-</div>
 
 
 <header class="header">
