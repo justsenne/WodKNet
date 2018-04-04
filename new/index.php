@@ -4,10 +4,10 @@ session_start();
 <!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript" src="../layout/scripts/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="../layout/scripts/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="../layout/scripts/bootstrap.js"></script>
-    <script type="text/javascript" src="../layout/scripts/ajax.js"></script>
+    <script type="text/javascript" src="layout/scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="layout/scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="layout/scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="layout/scripts/ajax.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="../layout/scripts/fontawesome-all.js"></script>
 
@@ -25,7 +25,11 @@ session_start();
     <h1 class="title">PC4U</h1>
 </header>
 <script>
-    
+    $(document).ready(function(){
+        $(".phpheader").click(function(){
+            $(".menuding").slideToggle(250);
+        });
+    });
 </script>
 <div class="phpheader">
     <h2>menu</h2>
