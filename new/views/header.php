@@ -1,7 +1,6 @@
-
-
-
+<?php
 session_start();
+?>
 <header class="header">
     <h1 class="title">PC4U</h1>
 </header>
