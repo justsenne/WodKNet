@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20112b61-6150-4950-8cac-b8a2b6dd5417" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/new/.idea/workspace.xml" afterPath="$PROJECT_DIR$/new/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/new/views/article.php" afterPath="$PROJECT_DIR$/new/views/article.php" />
+      <change beforePath="$PROJECT_DIR$/new/views/header.php" afterPath="$PROJECT_DIR$/new/views/header.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,12 +47,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new/views/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-              <folding />
+            <state relative-caret-position="480">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <marker date="1523357354409" expanded="true" signature="665:677" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="article.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="article.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/views/article.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+            <state relative-caret-position="48">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -156,10 +157,10 @@
         <option value="$PROJECT_DIR$/new/views/login.php" />
         <option value="$PROJECT_DIR$/new/views/articleupdate.php" />
         <option value="$PROJECT_DIR$/new/views/include.php" />
-        <option value="$PROJECT_DIR$/new/views/header.php" />
         <option value="$PROJECT_DIR$/new/views/user.php" />
         <option value="$PROJECT_DIR$/new/index.php" />
         <option value="$PROJECT_DIR$/new/views/article.php" />
+        <option value="$PROJECT_DIR$/new/views/header.php" />
       </list>
     </option>
   </component>
@@ -305,12 +306,12 @@
       <updated>1522148109376</updated>
       <workItem from="1522148110792" duration="14346000" />
       <workItem from="1522247355261" duration="1148000" />
-      <workItem from="1523355771675" duration="1207000" />
+      <workItem from="1523355771675" duration="1585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23101000" />
+    <option name="totallyTimeSpent" value="23479000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1098" extended-state="6" />
@@ -668,14 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new/views/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="55" lean-forward="true" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/new/views/articlephp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -728,9 +721,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new/views/article.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        <state relative-caret-position="48">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/views/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <marker date="1523357354409" expanded="true" signature="665:677" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
