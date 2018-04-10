@@ -1,4 +1,6 @@
+<!DOCTYPE html>
 <?php
+session_start();
 if (isset($_GET['article'])){
 include_once("connection.php");
 include_once("include.php");
@@ -50,4 +52,9 @@ $result = $sql->fetchAll();
     }
 ?>
 
-
+<form action="comment.php?article=<?php echo $_GET['article']; ?>" method="POST">
+    <label for="number"> rating:</label>
+    <input type="number" name="rating" max="10" min="0">
+    <textarea name="comment" maxlength="1500" id="comment" cols="30" rows="10"></textarea>
+    <input type="submit" name="submit" value="place comment">
+</form>
