@@ -67,7 +67,7 @@ if (isset($_POST['submit'])) {
     header("Location: ../index.php");
 }
 ?>
-<button onclick="goBack()">Go Black</button>
+<button onclick="goBack()">Go Back</button>
 
 
 <a href="../index.php"> index </a>
