@@ -1,3 +1,9 @@
+<?php
+if (!$_SESSION["rank"] == '1') {
+    header("Location: ../index.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html>
 
