@@ -1,4 +1,5 @@
 <?php
+session_start();
 ?>
 <header class="header">
     <h1 class="title">PC4U</h1>
@@ -11,11 +12,9 @@
         echo ""
             ."<a href='../index.php'>Voorpagina</a><br>"
             ."<a href='../index.php'>Producten</a><br>"
-            ."<a href='../index.php'>Recenties</a><br>";
-            if (!$_SESSION["rank"] == '1') {
-                echo "<a href='article.php'>Product toevoegen</a><br>";
-                }
-            echo "<a href='vernietig.php?vernietig'> Logout </a><br>";
+            ."<a href='../index.php'>Recenties</a><br>"
+            ."<a href='article.php'>Product toevoegen</a><br>"
+            ."<a href='vernietig.php?vernietig'> Logout </a><br>";
         ?>
     </div>
 

@@ -1,55 +1,108 @@
+<?php
+include_once('user.php');
+
+if(isset($_POST['submit'])) {
+    $email = $_POST['email'];
+    $pass = $_POST['pass'];
+
+    $object = new User();
+    $object->Login($email, $pass);
+}
+
+?>
+<!DOCTYPE html>
 <html>
 <head>
+    <script type="text/javascript" src="../layout/scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../layout/scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../layout/scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="../layout/scripts/ajax.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../layout/scripts/fontawesome-all.js"></script>
     <?php
-    include("include.php");
+    include('../includes/head.php');
     ?>
+    <link rel="stylesheet" type="text/css" href="../layout/css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="../marktplaats-compass/stylesheets/style.css">
 </head>
 <body>
-<header class="header">
-    <h1 class="title">PC4U</h1>
-</header>
 
-<div class="products">
-<form style="text-align: center" id="form" action="registerphp.php" method="post">
-    <label>Email</label><br />
-    <input  class="inputveld" type="email" maxlength="50" name="email"><br><br>
+<!-- Header -->
 
-    <label>Wachtwoord</label><br />
-    <input  class="inputveld" type="password" maxlength="50" name="password" required><br><br>
+<?php
+include('../includes/nav.php');
+?>
 
-    <label>Voornaam</label><br />
-    <input  class="inputveld" type="text" maxlength="30" name="firstname" required><br><br>
+<div class="my-3 p-3 bg-white rounded box-shadow container">
+    <form class="p-3" id="form" action="../views/registerphp.php" method="POST" enctype="multipart/form-data">
+        <h6 class="border-bottom border-gray pb-2 mb-0">Inloggen:</h6>
 
-    <label>Achternaam</label><br />
-    <input  class="inputveld" type="text" maxlength="30" name="surname" required><br><br>
+        <div class="row my-2">
+            <div class="col-6">
+                <label>Voornaam</label>
+                <input class="form-control" type="text" maxlength="300" name="firstname" required>
+            </div>
+            <div class="col-6">
+                <label>Achternaam</label>
+                <input class="form-control" type="text" maxlength="300" name="surname" required>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                <label>Email</label>
+                <input class="form-control" type="text" maxlength="100" name="email">
+            </div>
+            <div class="col-6">
+                <label>Telefoonnummer</label>
+                <input class="form-control" type="tel" maxlength="300" name="phone" required>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                <label>Woonplaats</label>
+                <input class="form-control" type="text" maxlength="300" name="place" required>
+            </div>
+            <div class="col-6">
+                <label>Straatnaam</label>
+                <input class="form-control" type="text" maxlength="300" name="adress" required>
+            </div>
 
-    <label>Telefoon nummer</label><br />
-    <input  class="inputveld" type="tel" maxlength="10" name="phone" required><br><br>
-
-    <label>Woonplaats</label><br />
-    <input class="inputveld"  type="text" maxlength="30" name="place" required><br><br>
-
-    <label>Staatnaam</label><br />
-    <input  class="inputveld" type="text" maxlength="30" name="adress" required><br><br>
-
-    <label>Huisnummer</label><br />
-    <input class="inputveld"  type="text" maxlength="5" name="housenumber" required><br><br>
-
-    <label>Postcode</label><br />
-    <input class="inputveld"  type="text" maxlength="7" name="zipcode" required><br><br>
-
-
-    <input name="newsletter" type="checkbox"><label> aanmelden voor de nieuwsbrief?</label><br><br>
-
-
-    <input class="inputknop" type="submit" name="submit"><br><br>
-    <a href="login.php">Heb jij al een account?</a>
-</form>
+        </div>
+        <div class="row my-2">
+            <div class="col-6">
+                <label>Huisnummer</label>
+                <input class="form-control" type="text" maxlength="300" name="housenumber" required>
+            </div>
+            <div class="col-6">
+                <label>Postcode</label>
+                <input class="form-control" type="text" maxlength="300" name="zipcode" required>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-12">
+                <label>Wachtwoord</label>
+                <input class="form-control" type="text" maxlength="300" name="password" required>
+                <small id="passwordHelpBlock" class="form-text text-muted">
+                    Wij raden aan om minimaal 8 tekens te gebruiken, letters en nummers en eventueel andere tekens te combineren.
+                </small>
+            </div>
+        </div>
+        <div class="row my-2">
+            <div class="col-12 ml-3">
+                <input name="newsletter" class="form-check-input" type="checkbox" checked><label> aanmelden voor de nieuwsbrief?</label>
+            </div>
+        </div>
+        <div class="row my-2 ">
+            <div class="col-2">
+                <input type="submit" class="btn btn-primary" value="Registreer" name="submit">
+            </div>
+            <a href="login.php">Heb jij al een account?</a>
+        </div>
+        <!--        <label for="number"> rating:</label>-->
+        <!--        <input type="number" name="rating" max="10" min="0">-->
+        <!--        <textarea name="comment" maxlength="1500" id="comment" cols="30" rows="10"></textarea>-->
+        <!--        <input type="submit" name="submit" value="place comment">-->
+    </form>
 </div>
-    <script src="js\jquery.js"></script>
-    <script src="js\jquery.validate.js"></script>
-    <script>
-        $("#form").validate();
-    </script>
 </body>
 </html>

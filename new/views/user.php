@@ -32,7 +32,6 @@ Class User
                 foreach ($result as $var) {
                     $_SESSION["rank"] = $var["rank"];
                     $_SESSION["user"] = $var["first_name"];
-                    $_SESSION["userid"] = $var["user_id"];
                 }
 
                 foreach ($result as $hash) {

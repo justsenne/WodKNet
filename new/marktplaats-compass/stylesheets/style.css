@@ -70,91 +70,12 @@ h1 {
 }
 
 /* line 62, ../sass/style.sass */
-.header {
+nav {
   background: linear-gradient(to right, #00429D, #006BFF, #00429D);
   color: #F6F6FF;
-  width: 100%;
-  padding: 0em;
-  word-wrap: break-word;
-  position: sticky;
-  top: 0px;
 }
 
-/* line 71, ../sass/style.sass */
-.title {
-  text-align: center;
-  padding: 1vh;
-}
-
-/* line 76, ../sass/style.sass */
-.phpheader {
-  background: #F6F6FF;
-  color: #006BFF;
-  width: 100%;
-  padding: 0em;
-  word-wrap: break-word;
-}
-/* line 77, ../sass/style.sass */
-.phpheader a {
-  text-decoration: none;
-  color: #006BFF;
-}
-
-/* line 86, ../sass/style.sass */
-h2, h3 {
-  margin: 0px;
-  text-align: center;
-}
-
-/* line 90, ../sass/style.sass */
-.products {
-  padding: 5vw;
-  background-color: #F6F6FF;
-  margin: 5vw;
-}
-/* line 91, ../sass/style.sass */
-.products a {
-  text-decoration: none;
-  color: #006BFF;
-}
-/* line 97, ../sass/style.sass */
-.products .nieuwgrid {
-  margin-top: 5vw;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-  grid-gap: 15px;
-}
-/* line 102, ../sass/style.sass */
-.products .productgrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-  grid-gap: 15px;
-}
-
-/* line 107, ../sass/style.sass */
-.productitem {
-  box-shadow: 0px 0px 7px #a1a1b9;
-}
-@media (max-width: 720px) {
-  /* line 109, ../sass/style.sass */
-  .productitem .img {
-    height: 250px;
-  }
-}
-@media (min-width: 720px) {
-  /* line 109, ../sass/style.sass */
-  .productitem .img {
-    height: 350px;
-  }
-}
-
-/* line 115, ../sass/style.sass */
-.borderding {
-  border-top: #006BFF 1px solid;
-  margin-top: 2px;
-}
-
-/* line 119, ../sass/style.sass */
+/* line 66, ../sass/style.sass */
 .inputveld {
   width: 75%;
   border-bottom: 1px solid #a1a1b9 !important;
@@ -164,7 +85,7 @@ h2, h3 {
   padding: 5px;
 }
 
-/* line 127, ../sass/style.sass */
+/* line 74, ../sass/style.sass */
 .inputknop {
   width: 50%;
   border: 1px solid #00429D;

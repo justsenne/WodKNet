@@ -1,0 +1,92 @@
+$dark   : black;
+$medium : grey;
+$light  : white;
+
+.button {
+  color:red;
+  :hover{
+  :active{
+    text-decoration: none;
+    background-color: green;
+  }
+  }
+}
+
+.header {
+background-color: $dark;
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    height: 10%;
+    .burger {
+      color: $light;
+      font-size: 4em;
+      float: right;
+      padding: 1em;
+      :hover{
+        color: $medium;
+      }
+    }
+  }
+  @media screen and (min-width: 1201px) {
+    width: 100%;
+    height: 5%;
+    .search {
+
+      display: none;
+    }
+  }
+}
+
+.game-item{
+  @media screen and (max-width: 700px) {
+    width: 90%;
+    height: 40%;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  @media screen and (min-width: 701px) {
+    width: 20%;
+    height: 20%;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  float: left;
+  background-color: $medium;
+}
+.product-page {
+  @media screen and (max-width: 700px) {
+    width: 94%;
+    height: 40%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+  }
+  @media screen and (min-width: 701px) {
+    width: 60%;
+    height: 60%;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+}
+body {
+  background-color: $light;
+  cursor: url("../../data/cursos.png"), pointer !important;
+}
+
+input.empty {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: inherit;
+  padding: 5px;
+  font-size: 22px;
+  line-hight:24px;
+  border:1px solid #ddd;
+  border-radius:4px;
+
+}
+
+
+

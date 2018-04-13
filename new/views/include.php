@@ -6,6 +6,7 @@
     <script defer src="../layout/scripts/fontawesome-all.js"></script>
 
     <link rel="stylesheet" type="text/css" href="../layout/css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="../layout/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../marktplaats-compass/stylesheets/style.css">
 
     <title> PC4U </title>
