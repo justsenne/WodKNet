@@ -1,0 +1,96 @@
+/* line 3, ../sass/style.sass */
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #a1a1b9;
+  margin: 0px;
+}
+
+/* line 8, ../sass/style.sass */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 0px;
+}
+
+/* line 16, ../sass/style.sass */
+body {
+  background-color: #a1a1b9;
+}
+
+/* line 19, ../sass/style.sass */
+.blok {
+  background-color: #F6F6FF;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+  border-radius: 0.5em;
+}
+
+/* line 31, ../sass/style.sass */
+.login .submit {
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 10em;
+  background-color: #006BFF;
+  border: 0px solid;
+  padding: 1em;
+  color: #F6F6FF;
+}
+/* line 39, ../sass/style.sass */
+.login .submit:hover {
+  background-color: #00429D;
+}
+/* line 41, ../sass/style.sass */
+.login .veld {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 1em;
+  border-radius: 0em;
+  background-color: #F6F6FF;
+  border-bottom: 1px solid #a1a1b9 !important;
+  border: 1px solid #F6F6FF;
+  padding: 0.5em;
+  color: #00429D;
+}
+/* line 51, ../sass/style.sass */
+.login .veld:focus {
+  border-bottom: 1px solid #006BFF !important;
+  border: 1px solid #F6F6FF;
+  color: #006BFF;
+}
+
+/* line 56, ../sass/style.sass */
+h1 {
+  margin: 0vh;
+  font-size: 2em;
+}
+
+/* line 62, ../sass/style.sass */
+nav {
+  background: linear-gradient(to right, #00429D, #006BFF, #00429D);
+  color: #F6F6FF;
+}
+
+/* line 66, ../sass/style.sass */
+.inputveld {
+  width: 75%;
+  border-bottom: 1px solid #a1a1b9 !important;
+  background-color: #F6F6FF;
+  color: #00429D;
+  border: 0px solid;
+  padding: 5px;
+}
+
+/* line 74, ../sass/style.sass */
+.inputknop {
+  width: 50%;
+  border: 1px solid #00429D;
+  background-color: #006BFF;
+  margin-top: 5px;
+  color: #F6F6FF;
+  padding: 5px;
+}
