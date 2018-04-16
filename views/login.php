@@ -47,7 +47,7 @@ include('../includes/nav.php');
         <div class="row my-2">
             <div class="col-12">
                 <label>Wachtwoord</label>
-                <input class="form-control" type="text" maxlength="300" name="pass" required>
+                <input class="form-control" type="password" maxlength="300" name="pass" required>
             </div>
         </div>
         <div class="row my-2 ">

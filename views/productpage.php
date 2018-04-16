@@ -77,27 +77,18 @@ if ($_SESSION["rank"] == 1) {
     echo "<div class='my-3  bg-white rounded box-shadow container'>"
         . "<div class='row p-3'>"
         . "<div class='col-sm-6'>"
-        . "<a style='text-align: right;' href='http://localhost/WodKNet2/views/articleupdate.php?article="
+        . "<a style='text-align: right;' href='articleupdate.php?article="
         . $row['article_id']
         . "'><i class='fas fa-edit'></i> Product aanpassen </a>"
         . "</div>"
         . "<div class='col-sm-6'>"
-        . "<a style='text-align: center;' href='http://localhost/WodKNet2/views/articledelete.php?article="
+        . "<a style='text-align: center;' href='articledelete.php?article="
         . $row['article_id']
         . "'><i style='color: darkred;' class='fas fa-times'></i> Product verwijderen</a>"
         . "</div>"
         . "</div>"
         . "</div>";
 
-
-//        ."<div class='my-3 p-3 bg-white rounded box-shadow container'>"
-//        ."<div class='products' style=''><a style='text-align: center;' href='http://localhost/WodKNet2/views/articleupdate.php?article="
-//        . $row['article_id']
-//        . "'><i class='fas fa-edit'></i> Product aanpassen </a><br />"
-//        . "<a style='text-align: center;' href='http://localhost/WodKNet2/views/articledelete.php?article="
-//        . $row['article_id']
-//        . "'><i style='color: darkred;' class='fas fa-times'></i> Product verwijderen</a></div>"
-//        ."</div>";
 } else {
     echo "";
 }
@@ -172,36 +163,5 @@ if ($_SESSION["rank"] == 1) {
     }
     ?>
 </div>
-
-
-<?php
-/*
-// deze code print de comments uit enzo (niet dit soort comment in de code je snapt me wel)
-$commentsql = $conn->prepare("SELECT * FROM comments WHERE article_id=? ORDER BY rating DESC");
-$commentsql->BindParam(1, $_GET['article']);
-$commentsql->execute();
-$result = $commentsql->fetchAll();
-
-foreach ($result as $row) {
-    // ik heb de wrapper ff de class products gegeven voor overzichtelijkheid
-    echo "<div class='comment_wrapper products'>
-    <div class='comment_header'>
-    " . $row["user_id"] . " - rating: " . $row["rating"] . "
-</div> <div class='comment_body'>
-    " . $row["comment"];
-    if ($row["user_id"] == $_SESSION["userid"]) {
-        // link naar updaten
-        echo "<a href='commentupdate.php?id=" . $row["comment_id"] . "'> update </a>";
-        // link naar verwijderen
-        echo "<a href='commentdelete.php?id=" . $row["comment_id"] . "'> DELET </a>";
-
-    } elseif ($_SESSION["rank"] == 1) {
-        // link naar verwijderen als je admin bent
-        echo "<a href='commentdelete.php?id=" . $row["comment_id"] . "'> DELET </a>";
-    }
-    echo "</div> </div>";
-}
-*/
-?>
 </body>
 </html>

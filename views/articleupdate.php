@@ -2,21 +2,30 @@
 <html>
 
 <head>
+    <script type="text/javascript" src="../layout/scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../layout/scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../layout/scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="../layout/scripts/ajax.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../layout/scripts/fontawesome-all.js"></script>
     <?php
-    include("include.php");
+    include('../includes/head.php');
+    session_start();
     ?>
+    <link rel="stylesheet" type="text/css" href="../layout/css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="../marktplaats-compass/stylesheets/style.css">
 </head>
 
 <body>
 
 <?php
-include("header.php");
+include("../includes/nav.php");
 
 include_once('connection.php');
 if (isset($_POST['submit'])) {
-
+echo "1";
     if ($_SESSION['rank'] == 1 && isset($_SESSION["logged"])) {
-
+echo "2";
 
         $sql = $conn->prepare("SELECT * FROM articles WHERE article_id=?");
         $sql->BindParam(1, $_GET['article']);
@@ -40,7 +49,9 @@ if (isset($_POST['submit'])) {
         header("Location: ../index.php");
         exit;
     } else {
+        echo "3";
         header("Location: ../index.php");
+        exit;
     }
 } else if ($_SESSION['rank'] == 1) {
     $sql = $conn->prepare("SELECT * FROM articles WHERE article_id=?");
@@ -54,20 +65,21 @@ if (isset($_POST['submit'])) {
         $price = $row['article_price'];
         $img = $row["article_image"];
 
-        echo "<div class=\"products\"><form id='form' style=\"text-align: center\" action='articleupdate.php?article=" . $_GET['article'] . "' method='POST' enctype='multipart/form-data'>
-           <label>Naam van het product</label><br /><input type='text' class=\"inputveld\"  maxlength='15' name='articlename' value='"
+        echo "<div class='products'><form id='form' style='text-align: center' action='articleupdate.php?article=" . $_GET['article'] . "' method='POST' enctype='multipart/form-data'>
+           <label>Naam van het product</label><br /><input type='text' class='inputveld'  maxlength='15' name='articlename' value='"
             . $name
-            . "' required><br><br><label>Beschrijving van het product</label><br /><input type='text' class=\"inputveld\"  maxlength='300' name='articledesc' value='"
+            . "' required><br><br><label>Beschrijving van het product</label><br /><input type='text' class='inputveld'  maxlength='300' name='articledesc' value='"
             . $desc
-            . "' required><br><br><label>Prijs van het product</label><br /><input type='text' maxlength='6' class=\"inputveld\"  name='articleprice' value='"
+            . "' required><br><br><label>Prijs van het product</label><br /><input type='text' maxlength='6' class='inputveld'  name='articleprice' value='"
             . $price
-            . "' required><br><br> <input type='submit' class=\"inputknop\" name='submit' value='Product aanpassen'> </form></div>";
+            . "' required><br><br> <input type='submit' class='inputknop' name='submit' value='Product aanpassen'> </form></div>";
     }
 } else {
     header("Location: ../index.php");
+    exit;
 }
 ?>
-<button onclick="goBack()">Go Black</button>
+<button onclick="goBack()"> return </button>
 
 
 <a href="../index.php"> index </a>
