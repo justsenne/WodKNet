@@ -26,8 +26,6 @@ include('../includes/nav.php');
 ?>
 
 
-
-
 <div class="container">
     <div class="my-3 p-3 bg-white rounded box-shadow row">
         <?php
@@ -40,66 +38,64 @@ include('../includes/nav.php');
 
         foreach ($result as $row) {
             echo ""
-                ."<div class=\"card m-3\">"
-                    ."<div class=\"row \">"
-                        ."<div class=\"col-md-4\">"
-                            ."<img class='card-img-top' style='width: 100%; height: 100%; object-fit: cover; position: relative;' src='../data/img/"
-                            . $row['article_image']
-                            . "'>"
-                        ."</div>"
-                        ."<div class=\"col-md-8 px-3\">"
-                            ."<div class=\"card-block py-3\">"
-                                ."<h4 class=\"card-title\">"
-                                    . $row['article_name']
-                                ."</h4>"
-                                ."<p class=\"card-text\">"
-                                    ."Prijs: €"
-                                    . $row['article_price']
-                                ."</p>"
-                                ."<p class=\"card-text\">"
-                                    ."Artikelnummer: "
-                                    . $row['article_id']
-                                ."</p>"
-                                ."<p class=\"card-text\">"
-                                    ."Product omschrijving: <br />"
-                                    . $row['article_description']
-                                ."</p>"
-                            ."</div>"
-                        ."</div>"
-                    ."</div>"
-                ."</div>";
+                . "<div class='card m-3'>"
+                . "<div class='row '>"
+                . "<div class='col-md-4'>"
+                . "<img class='card-img-top' style='width: 100%; height: 100%; object-fit: cover; position: relative;' src='../data/img/"
+                . $row['article_image']
+                . "'>"
+                . "</div>"
+                . "<div class='col-md-8 px-3'>"
+                . "<div class='card-block py-3'>"
+                . "<h4 class='card-title'>"
+                . $row['article_name']
+                . "</h4>"
+                . "<p class='card-text'>"
+                . "Prijs: €"
+                . $row['article_price']
+                . "</p>"
+                . "<p class='card-text'>"
+                . "Artikelnummer: "
+                . $row['article_id']
+                . "</p>"
+                . "<p class='card-text'>"
+                . "Product omschrijving: <br />"
+                . $row['article_description']
+                . "</p>"
+                . "</div>"
+                . "</div>"
+                . "</div>"
+                . "</div>";
         }
         ?>
     </div>
 </div>
 
 <?php
-// dylan kan je ff die \" veranderen naar '
 if ($_SESSION["rank"] == 1) {
-    echo ""
-        ."<div class=\"my-3  bg-white rounded box-shadow container\">"
-        ."<div class=\"row p-3\">"
-            ."<div class='col-sm-6'>"
-                ."<a style='text-align: right;' href='http://localhost/WodKNet2/views/articleupdate.php?article="
-                . $row['article_id']
-                . "'><i class=\"fas fa-edit\"></i> Product aanpassen </a>"
-            ."</div>"
-            ."<div class='col-sm-6'>"
-                . "<a style='text-align: center;' href='http://localhost/WodKNet2/views/articledelete.php?article="
-                . $row['article_id']
-                . "'><i style='color: darkred;' class=\"fas fa-times\"></i> Product verwijderen</a>"
-            ."</div>"
-        ."</div>"
-        ."</div>";
+    echo "<div class='my-3  bg-white rounded box-shadow container'>"
+        . "<div class='row p-3'>"
+        . "<div class='col-sm-6'>"
+        . "<a style='text-align: right;' href='http://localhost/WodKNet2/views/articleupdate.php?article="
+        . $row['article_id']
+        . "'><i class='fas fa-edit'></i> Product aanpassen </a>"
+        . "</div>"
+        . "<div class='col-sm-6'>"
+        . "<a style='text-align: center;' href='http://localhost/WodKNet2/views/articledelete.php?article="
+        . $row['article_id']
+        . "'><i style='color: darkred;' class='fas fa-times'></i> Product verwijderen</a>"
+        . "</div>"
+        . "</div>"
+        . "</div>";
 
-        
-//        ."<div class=\"my-3 p-3 bg-white rounded box-shadow container\">"
-//        ."<div class='products' style=\"\"><a style='text-align: center;' href='http://localhost/WodKNet2/views/articleupdate.php?article="
+
+//        ."<div class='my-3 p-3 bg-white rounded box-shadow container'>"
+//        ."<div class='products' style=''><a style='text-align: center;' href='http://localhost/WodKNet2/views/articleupdate.php?article="
 //        . $row['article_id']
-//        . "'><i class=\"fas fa-edit\"></i> Product aanpassen </a><br />"
+//        . "'><i class='fas fa-edit'></i> Product aanpassen </a><br />"
 //        . "<a style='text-align: center;' href='http://localhost/WodKNet2/views/articledelete.php?article="
 //        . $row['article_id']
-//        . "'><i style='color: darkred;' class=\"fas fa-times\"></i> Product verwijderen</a></div>"
+//        . "'><i style='color: darkred;' class='fas fa-times'></i> Product verwijderen</a></div>"
 //        ."</div>";
 } else {
     echo "";
@@ -128,7 +124,7 @@ if ($_SESSION["rank"] == 1) {
         </div>
         <div class="row my-2">
             <div class="col-12">
-                <label>Toelichting:</label><br />
+                <label>Toelichting:</label><br/>
                 <input type="text" class="form-control form-control-md" name="comment" id="comment"></input>
 
             </div>
@@ -138,12 +134,15 @@ if ($_SESSION["rank"] == 1) {
                 <input type="submit" class="btn btn-primary" value="Recentie versturen" name="submit">
             </div>
         </div>
-<!--        <label for="number"> rating:</label>-->
-<!--        <input type="number" name="rating" max="10" min="0">-->
-<!--        <textarea name="comment" maxlength="1500" id="comment" cols="30" rows="10"></textarea>-->
-<!--        <input type="submit" name="submit" value="place comment">-->
+        <!--        <label for="number"> rating:</label>-->
+        <!--        <input type="number" name="rating" max="10" min="0">-->
+        <!--        <textarea name="comment" maxlength="1500" id="comment" cols="30" rows="10"></textarea>-->
+        <!--        <input type="submit" name="submit" value="place comment">-->
     </form>
 </div>
+<div class="my-3 p-3 bg-white rounded box-shadow container">
+    <h6 class="border-bottom border-gray pb-2 mb-0">Wat onze klanten vinden van dit product:</h6>
+
 <?php
 // deze code print de comments uit enzo (niet dit soort comment in de code je snapt me wel)
 $commentsql = $conn->prepare("SELECT * FROM comments WHERE article_id=? ORDER BY rating DESC");
@@ -153,12 +152,12 @@ $result = $commentsql->fetchAll();
 
 foreach ($result as $row) {
     // ik heb de wrapper ff de class products gegeven voor overzichtelijkheid
-    echo "<div class='comment_wrapper products'>
-    <div class='comment_header'>
-    " . $row["user_id"] . " - rating: " . $row["rating"] . "
-</div> <div class='comment_body'>
-    " . $row["comment"];
-    if ($row["user_id"] == $_SESSION["userid"]){
+    echo "<div class='media text-muted pt-3'> <p class='media-body pb-3 mb-0 small lh-125 border-bottom border-gray'>
+            <strong class='d-block text-gray-dark'>
+    " . $row["user_id"] . " geeft dit product een " . $row["rating"] . "
+</strong>
+    " . $row["comment"] . "  </p>";
+    if ($row["user_id"] == $_SESSION["userid"]) {
         // link naar updaten
         echo "<a href='commentupdate.php?id=" . $row["comment_id"] . "'> update </a>";
         // link naar verwijderen
@@ -168,22 +167,14 @@ foreach ($result as $row) {
         // link naar verwijderen als je admin bent
         echo "<a href='commentdelete.php?id=" . $row["comment_id"] . "'> DELET </a>";
     }
-    echo "</div> </div>";
+    echo "</div>";
 }
 ?>
-
-<div class="my-3 p-3 bg-white rounded box-shadow container">
-    <h6 class="border-bottom border-gray pb-2 mb-0">Wat onze klanten vinden van dit product:</h6>
-    <div class="media text-muted pt-3">
-        <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-            <strong class="d-block text-gray-dark">@username geeft dit product een 10.</strong>
-            bericht
-        </p>
-    </div>
 </div>
 
 
 <?php
+/*
 // deze code print de comments uit enzo (niet dit soort comment in de code je snapt me wel)
 $commentsql = $conn->prepare("SELECT * FROM comments WHERE article_id=? ORDER BY rating DESC");
 $commentsql->BindParam(1, $_GET['article']);
@@ -197,7 +188,7 @@ foreach ($result as $row) {
     " . $row["user_id"] . " - rating: " . $row["rating"] . "
 </div> <div class='comment_body'>
     " . $row["comment"];
-    if ($row["user_id"] == $_SESSION["userid"]){
+    if ($row["user_id"] == $_SESSION["userid"]) {
         // link naar updaten
         echo "<a href='commentupdate.php?id=" . $row["comment_id"] . "'> update </a>";
         // link naar verwijderen
@@ -209,6 +200,7 @@ foreach ($result as $row) {
     }
     echo "</div> </div>";
 }
+*/
 ?>
 </body>
 </html>

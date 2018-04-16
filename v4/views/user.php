@@ -29,10 +29,6 @@ Class User
                     ":email" => $_POST['email']
                 ));
                 $result = $statement->fetchAll();
-                foreach ($result as $var) {
-                    $_SESSION["rank"] = $var["rank"];
-                    $_SESSION["user"] = $var["first_name"];
-                }
 
                 foreach ($result as $hash) {
                     $hashed = password_verify($pass, $hash["password"]);
@@ -41,15 +37,17 @@ Class User
                     $st->BindParam(1, $email);
                     $st->BindParam(2, $hashed);
                     $st->execute();
-                }
                 if ($hashed == true) {
                     $_SESSION["logged"] = "true";
+                    $_SESSION["rank"] = $hash["rank"];
+                    $_SESSION["user"] = $hash["first_name"];
+                    $_SESSION["userid"] = $hash["user_id"];
                     header("Location: ../index.php");
                     exit;
                 } else {
                     echo "incorrecte mail of wachtwoord";
                 }
-
+                }
 
             } else {
                 echo "vul email en wachtwoord in";

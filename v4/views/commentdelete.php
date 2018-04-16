@@ -18,10 +18,10 @@ if ($_SESSION['rank'] == 1 || $_SESSION["userid"] == $comment_user){
     $sql = "DELETE FROM comments WHERE comment_id=" . $_GET["id"];
     $conn->exec($sql);
 
-    header("Location: articlepage.php?article=". $article_id);
+    header("Location: productpage.php?article=". $article_id);
     exit;
 } else {
-    header("Location: articlepage.php?article=". $article_id);
+    header("Location: productpage.php?article=". $article_id);
     exit;
 }
 ?>
