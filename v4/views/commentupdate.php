@@ -2,16 +2,24 @@
 <html>
 
 <head>
+    <script type="text/javascript" src="../layout/scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../layout/scripts/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="../layout/scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="../layout/scripts/ajax.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../layout/scripts/fontawesome-all.js"></script>
     <?php
+    include('../includes/head.php');
     session_start();
-    include("include.php");
     ?>
+    <link rel="stylesheet" type="text/css" href="../layout/css/fontawesome-all.css">
+    <link rel="stylesheet" type="text/css" href="../marktplaats-compass/stylesheets/style.css">
 </head>
 
 <body>
 
 <?php
-include("header.php");
+include("../includes/nav.php");
 
 include_once('connection.php');
 $idsql = $conn->prepare("SELECT * FROM comments WHERE comment_id=?");
@@ -37,7 +45,7 @@ if (isset($_POST['submit'])) {
         $stmt->bindParam(3, $_GET['id'], PDO::PARAM_STR);
         $stmt->execute();
 
-        header("Location: articlepage.php?article=". $article_id);
+        header("Location: productpage.php?article=". $article_id);
         exit;
     } else {
         header("Location: ../index.php");
